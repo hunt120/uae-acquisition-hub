@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-11-23T07:38:11.219571+00:00",
-  "feed_successes": 12,
+  "updated_at": "2026-11-23T07:54:04.609839+00:00",
+  "feed_successes": 20,
   "daily_target": 40,
-  "method": "Conservative headline extraction; names, UAE operation and hiring require manual verification",
+  "method": "Company-specific news extraction; employer, UAE presence and hiring require verification; no guaranteed lead count",
   "signals": [
     {
       "id": "3c541071b377bd67e1",
@@ -12,9 +12,30 @@
       "type": "unverified_news_signal"
     },
     {
+      "id": "f7079a038289d9b904",
+      "title": "Expand North Star 2026 to bring global AI startups, investors to Dubai in December - Gulf Business",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxON09PY2VTcjN4OFBzaGVzdWR6cUVxYVhPQXhDbmZOMUdoYXJlLXItRHZoUUktUnotUFJKU0hOQ2tsMlFzMmczYThFUGJpMTZRTXJNa1l3c3MwNXlrNF9JN2dZdTdPWWNPMWlOX0dtNVFLSFVid19BeG5nbks2MXV2X29aSVdHa1dwVW05cjU4N2dtYmxWNEZmaTRBcE5pRVoya3l0c2c1SGJzNE9DMl93NG5xa0R6U1BOaS1z?oc=5",
+      "published": "2026-11-20T07:02:39+00:00",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "16aac4e36935834fde",
+      "title": "Expand North Star 2026 to bring global AI startups, investors to Dubai in December - Gulf Business",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOcnR4aXh0dmhNay04RGJFQkY1ZWgtVGhra2dhU20xamxRRlVUMkJ4ODlNbGVWUUNraWdrQ290QVRrcEs2aDZhcENkUkg0ZkxublNmUEVJSFA0dFRtaVMybEwyalRhYk5iRm51Z293ZEs0NlotOEFoalZoS2hrLXBubFZyLUJ0YUFTa2pZUjdGNmtyWnJ3OWw0aG9oYjRzaWdPQzhQNV9vTjJvMEVFUjFSa1pFck1pUWZZU18zWGRwQQ?oc=5",
+      "published": "2026-11-20T07:02:02+00:00",
+      "type": "unverified_news_signal"
+    },
+    {
       "id": "c5b1d73ef74a30ab5e",
       "title": "UAE pension authority steps up Emirati recruitment drive - hrme.economictimes.indiatimes.com",
       "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNNjBMQTdRazdVUEY1YXB3UlJpY2VoRUtyb1dWSEZoWVp3WlotS0dVX1ZfSmd2TW41ZzhGYkxMekp2TS1ob3FuNjhaZDdxeUttZHl3U2cyT3l1aU5iU08wbDNTOWx1V3hkd2xsS3phUkMwVGdyYUw3YXByNEdiSkU5UV9MM1RiZjEtWU1iMUNsLWEzOC1nOUVuRDJ3SUxqazVBajBKRk5oWUVCSGYzVzExVUlITDNKZlI2M290azVZTkhWWnRfdUd0NkFDSdIB0AFBVV95cUxNLWtMSEZrZjU2ZS1kZjZTZ2Zvc24zY1ptSmktNEpfMzM0RVdsNVU5UlpwODhURDZNZHVNdXNQSTFpVVpRZTVCSzFPSkRJdkM2QWY2Z2cwS0hha1lPbC1oU1c2VVVjd19SRlpodDVTNGV6czV2b1k2eG00QWJqYVZHU3JJbmxxVHVfamR6bjBEVFAzSnRmSmRReEN4ZzBveld5bHBrdjZnREF0blpFbkxmR01PT0M0TjhUODExOVJ4amRTUDExcy1xUXR3eHRmbHNW?oc=5",
+      "published": "2026-11-20T02:36:06+00:00",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "f1316eefb59450e856",
+      "title": "UAE pension authority steps up Emirati recruitment drive - hrme.economictimes.indiatimes.com",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNLWtMSEZrZjU2ZS1kZjZTZ2Zvc24zY1ptSmktNEpfMzM0RVdsNVU5UlpwODhURDZNZHVNdXNQSTFpVVpRZTVCSzFPSkRJdkM2QWY2Z2cwS0hha1lPbC1oU1c2VVVjd19SRlpodDVTNGV6czV2b1k2eG00QWJqYVZHU3JJbmxxVHVfamR6bjBEVFAzSnRmSmRReEN4ZzBveld5bHBrdjZnREF0blpFbkxmR01PT0M0TjhUODExOVJ4amRTUDExcy1xUXR3eHRmbHNW0gHQAUFVX3lxTE0ta0xIRmtmNTZlLWRmNlNnZm9zbjNjWm1KaS00Sl8zMzRFV2w1VTlSWnA4OFRENk1kdU11c1BJMWlVWlFlNUJLMU9KREl2QzZBZjZnZzBLSGFrWU9sLWhTVzZVVWN3X1JGWmh0NVM0ZXpzNXZvWTZ4bTRBYmphVkdTcklubHFUdV9qZHpuMERUUDNKdGZKZFF4Q3hnMG96V3lscGt2NmdEQXRuWkVuTGZHTU9PQzROOFQ4MTE5UnhqZFNQMTFzLXFRdHd4dGZsc1Y?oc=5",
       "published": "2026-11-20T02:36:06+00:00",
       "type": "unverified_news_signal"
     },
@@ -26,11 +47,25 @@
       "type": "unverified_news_signal"
     },
     {
+      "id": "f59c9a8bcb6b7fe1d2",
+      "title": "UAE employees likely to receive salary increases in 2027 - Pakistan Connect",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBTYWVxMk42dTJKdkdid05JYWxrTXFHZTRIcURoM1F1MTdNa2VjdEUzVUZKU1NZQmZCanl1WGUya2UzVHNBZHhPa3VLMkVqczRrYjlTSlVkRE9UMjdwZndJTlU0RHQtdEo1dHpRZg?oc=5",
+      "published": "2026-11-19T14:42:10+00:00",
+      "type": "unverified_news_signal"
+    },
+    {
       "id": "b461322bc52ce2a7a4",
       "title": "UAE jobs: LinkedIn reveals 10 fastest-growing occupations as hiring rises across 15 industries - Arabian Business",
       "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQTGthMjMtUUg2OTZrZzlLZDY4LVFWMnNoTC1HbUg4N1lMZGt0cXNfVjAxYW1kV3g3amNOT0hWRnNZRU1HN05EdGs5TUtvbG5GYnJJNnNBUWo1eldZVzJncnVrd1dzdGZQblFWa1lvbXVCcDV0SXdEalNCdmU4V1c3LU1zd0IwdS1wdUtWdC1DX0Zvb0dHc3ROeg?oc=5",
       "published": "2026-11-16T21:31:48+00:00",
       "query": "\"UAE\" (company OR employer) (\"hiring\" OR \"recruiting\") when:14d",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "4bf6186cf20bb2f03e",
+      "title": "DMW and DataFlow Group sign agreement to launch DREAM platform in Dubai - Zawya",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNWFVHWEthLUJMLU1UcFBhdmd2Ylc1MDJsVUdaRnhUel9DMzd5VWNLQmxuM255bjk1MC1pU2hwb2F3OWVUbGVka1A0aDVZdnkxazBSNkhpQ1Q3b3k1Y29jWThhX1lWcEZ6THVkczBVRTdmbUU3Zk1qUGUzVHo5NXJFMG94b3o1QURULU9GN1Vhb2FEYlJlTnlCd2gzS3Jrd0x3V211czdjNFVVbU9vT21mSW8xZDB3ZVR3Undmc3FHOFlzQmdZbFNMVFR1Ung3dw?oc=5",
+      "published": "2026-11-16T14:08:00+00:00",
       "type": "unverified_news_signal"
     },
     {
@@ -45,7 +80,6 @@
       "title": "Dubai Taxi Company to train 400 employees in AI under new DIFC partnership - Gulf Business",
       "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPck9KSmZCcmtMWjlyLVV4SC1aUzBPNHIxU3ZWUTJtRHUxdDFlUGZSVUx3aFNrRmtUUHNPbzR1N3RyRXpIak5tNjdrVzgyUjZRdDR0dGxQcGNoN2lvNGFhNkw4aER0Uzh0M1NNRnd0cnNGeUkxdHlnUm1wSEhSVy1WbmhVdzVGcmktRXlNUVA1QXNsVXB2Nmp5cnFMUXBLZHlvQ3E3cXBJMEVKQmdZZUZsRG9UeW1PVkVDazdQT0g2bGtjaDBPMC12ZzJDSlU?oc=5",
       "published": "2026-11-16T07:48:53+00:00",
-      "query": "\"Dubai\" (company OR employer) (hiring OR recruitment OR jobs) when:14d",
       "type": "unverified_news_signal"
     },
     {
@@ -63,10 +97,31 @@
       "type": "unverified_news_signal"
     },
     {
+      "id": "661db88fa885213504",
+      "title": "Why British entrepreneurs are looking south of central Dubai for global expansion - London Business News",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxObkYxLXdSaXdKZ0J1ajdkODQxcGtPNzg0NHlJc3BUeURTcjdCVkhmb0JtR2xYUm5jM2cwWmQtV000cTU2ZC1HNjJReENRQlRNNjZkQUMybV9MQkhzZzhTRU50QmZYTWd4aVlVNVpoUEh3WGJ5azBQNHBjX1pBV3lybXZqV0w0dlpycmg2TC1pZUdsdkhsWnM1S1B5LXg3YlkxSE8xbGFkWENoR0hWbkFyMWRXQUc?oc=5",
+      "published": "2026-11-15T12:58:59+00:00",
+      "type": "unverified_news_signal"
+    },
+    {
       "id": "e855f09205ab79990b",
       "title": "Dubai Walk In Interview 2026 | 15+ Companies Hiring Freshers | Free Visa & Accommodation - YouTube",
       "url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE9ZWlVVbEFVU2l3YThrc00wYzZyY3puOElkMkN4WGxNZGdaVElaVERGRWxGRkloMWFDQmQzOUpHVTNpZw?oc=5",
       "published": "2026-11-14T12:59:15+00:00",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "0fd4139edf54ac1a36",
+      "title": "YYForce secures major UAE luxury hotel contracts, boosting Middle East expansion with Egypt talent support. - Pluang",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQVDNoTGtqQmFBOGFidzRTeHh6eVphTm91NmtQNzNmVWpYcVJUaHB0MXZOTEozdzNJNkExVnVOS2Jzcjc0dnVMWlRZQzA3N0pYaVZrTUoyN3ZPQTAwS2hiRnFtWllGc2xOVWxvMGhuazNGTjlrSjgxUEFFTVB5NXhta01WRVZKcVFBdnlsMVhTUnU4UjdlRWt0WG80NV9fTmtLQVo4?oc=5",
+      "published": "2026-11-14T11:30:21+00:00",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "1c753301a62b213c07",
+      "title": "Sokin gets DFSA licence, to grow UAE team to 100 staff - Gulf News",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPZUhOeHd1YUdTdkludHd5bDQ2UTdlUUY1RmtaX05XWHN3TnJ6U0QwSUs5QXYxSEswNFA4SEMzT2JGZWdpbzVWaDN2RUd6SkY1d244eTBxbk9idVBya1FaVmtIb2pkUDZoSHNaWk04c0QwNmpCdTZuS3d5dnh1Y3FLWWktT21hVHRvcV9KQTBNTnNYZ3hGUWJlTzd0ONIBqwFBVV95cUxPdERWUV9MY1lZMzhwWnRLUTZNNENGRk9Ma3lRZHBGQXJtaGk0dFBEREhEZThXd1ZHU0JIM0ZJcmhGUzllMUUwTzZpOXI1TTlCaEV0dU9yb1A1N1R2eEJiQ3JUX09uTHVvUlN1M1Q4RU1wSktWRmQ5N3VfOHJHcnJaZlZjYjZKUUVvdXpDMHRQb2NYQ1lYd3JFUjA0c2hQSkhrV3UzckI4WjhxTjA?oc=5",
+      "published": "2026-11-14T08:00:00+00:00",
       "type": "unverified_news_signal"
     },
     {
@@ -75,6 +130,20 @@
       "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNRFdOT3JFamZQUUtlWkZhTEdTQnZNXzVvckJCS20xRU85SmtCWDJ6OTd3QmZzbGxwcGN3QkhYclpmVThsYkRZZ19wUXN4M0lJYmRhdjVqMkRIQU5LbWp4YUV0RS0zSkE2eWZXV2VBT2xHNTJ0QVUzeHZ2aFBnNi1vbzFqRGYySXR1X2JnWTNaeDNSQmQ5YVhEUVdFN201V2UxM2c4?oc=5",
       "published": "2026-11-13T08:00:00+00:00",
       "query": "\"UAE\" (company OR employer) (\"hiring\" OR \"recruiting\") when:14d",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "20d9e639b739899b2e",
+      "title": "Sokin bets big on Dubai with 100-hire expansion and new office as payment services take off - Arabian Business",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQemlCc1FYQVlhQWxacC1XM1pxSlA2MTI0WkMtMUFSdURTRGp4WjhZYmJyNE9OOHZqdHVfdFY5V0phOWVIRDZwRjh1RTRQYjBiY05fbVJfLWZvMW5NUVo0a2pZenN1RjFsb0hkN0hkZG4yakdoME1oX3R4MzZPQUg1bC00WDJOMmNPSU82c2dWZFVjQ1p0LUIyNWlocExjTDAzN3ZveElTdzB1Z2NrNHE2N1R1RWZUdDBGUWpTbFJMN0VjQTItdEV6YjViRWZnRW9DeGJQM0dn?oc=5",
+      "published": "2026-11-13T07:32:24+00:00",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "bf005a83d92fdf3767",
+      "title": "Blackstone Expands Gulf Presence With New Dubai Office - Forbes Middle East",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOWUdaQ2RPazBuR1ZZMjd0cW5hTmFhSzdSRkk2UF9KdXExOVhiV0NzQ3BHMHh1Rk5jZm10Q0lHdnZCbkwwRHJFZXZJR0w5OU4tUkc3V0NhRzZHWFJsVG81MnRBWHl0UEIxcjh2VjRtYmZnT1dqYWFlYmNFY3NSeUhJc0Fwa0pwZ1cwMHJCdkhibm1MVHV5VDBxUFBxVGd2UUJDUUVDTlRYbTcxYnB2MkF0b0k0YzVxSGd2cFVsa19SbURaWHh6X2lnUXRYM1dkMHhYSWJRZA?oc=5",
+      "published": "2026-11-12T11:30:35+00:00",
       "type": "unverified_news_signal"
     },
     {
@@ -92,6 +161,13 @@
       "type": "unverified_news_signal"
     },
     {
+      "id": "8c019e2d696dd90e04",
+      "title": "India-UAE corridor is open. Crossing it is a cultural job, not copy paste - Adgully",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQOXZPLTNtaUs2QjZUeU1XM2I4RjJZam5JQ1haT1IzUjZ2RXJ5ZzVsUjdiVm8xRk51VWVuOERsUHQ1ZjVRc0Q0X0lUbzhFcXBWVkhXUm5NamwxTHhCWDZoQWNBbDdnRnFqQktCdjY0SlcxNXdJTDBKdnVmNkxXd3ptRFlsaGlHakxJWW1tWXRXQVZOcEowc0pzVnZoeE5QSXQtT0UtNHZOTmRmdw?oc=5",
+      "published": "2026-11-12T03:31:20+00:00",
+      "type": "unverified_news_signal"
+    },
+    {
       "id": "c2b7e2de285aa4ea4f",
       "title": "UAE jobs: Hiring rebounds as demand for AED10,000 roles jumps and nationality preferences shift - Arabian Business",
       "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1WSkxhQ09RZ1EzR2FyRVFhMnpRLVZSLUQyZkxPVmFacEpGdXJ1V25LRHEzX3RQME5Td1pDSFBEYTQwU3ZBT2lXSENqZ1J3czJjTl9GTi1HYXVHTDh5SWZ6WmNhR01mZlppTUI2RFVGNF9wY2M?oc=5",
@@ -105,7 +181,78 @@
       "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPM1gwNFVsT0hHMHpreUgyU0NJNkIzbGs1dTc1UkJIYjBUZmM5TmN1dFphZ3JYVWFuRmlKVXFzTVNUYTZ4dnpDdUdFNi1kbHV1R1hXdWhiWk1tM3VydnJMdllxTHlTaTRIazFZUVpsVXFGNDN1MEpEZU9UWDRvYllPWWdOSGFOMV96Zkxqa3J3Nl9vTXhsWXhfNWZrT3g1V0NMbldHZFZtR3FpREZYRTBCcDdFOVE1S05la01SOdIBxAFBVV95cUxPbkMyVjNhTTlkR05jRzljME5YZ1hxZlJhay1aTVYtRG5NRHpSaEg0SDJjTndSLTFtM3ZLd2xIZEI1VXAtTkpiOHdsYXVqNVJBaENSaDJxR1dqM09kN1lLWkVxM0drZ2p5RHhwU3dCb2xTcmVwX1F4enJvNlZFaXI0N293VTlnaHBVVzBIblp0YVBBN1pncGRzcFdVSG5fd1lxdF8teUQzbTNqYVEzT1FQQy1pbWVsSVF0RTJVa0hhOWlVUm50?oc=5",
       "published": "2026-11-09T08:00:00+00:00",
       "type": "unverified_news_signal"
+    },
+    {
+      "id": "04b35a4da85e0c2bc9",
+      "title": "Dubai’s Museum of the Future gets 20,000 job applications in 48 hours with skills-first hiring drive - Gulf Business",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNekdlM0R2c29jeEItTlNlZG5jN2I2WklPZ0xpYjhBTWFyY2VFbXNtR3NQT1RSaEhyLTZLWGMzZkdCbE11dWxBbnNESGQwVkItLUhBdEhLcUFMQVVxdVgyS2pVYmtDRXRTQ2ViSWhud1ZzdUNIOVlfWklydm1xQ0FBb3Q2YkFqZlkydGVoZUJ4c0RJc0FuNnpSWldoR1p4bFBqQUJwcmZBbjdOT1JHNkhNTnVPRjBmZU9udFpRVnNpVmZrOUJ2YUd4ZFdrdTQyc05ZaXZYczJRaWprYTA?oc=5",
+      "published": "2026-11-07T21:36:46+00:00",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "78bef2c45fc108bd1a",
+      "title": "ALEC FITOUT opens 7,500 sqm manufacturing facility in Ras Al Khaimah - Construction Week Online",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQRV82R3NOd08zTmU1WWtxQ041SUJBVERhb2pSQldlMWdSaGpzWFV0STdlampuT2VQS3hXNmlpU2hXU2wwRzNfOElQNFBHQ0lyYkN3YjNwbHZhS293NDdsNC05NmpCdi0wbUJGY2JBaUZqMmg0ZGpJS2lucllpeEhqTEVQdnprQzFDM1p3NHFYdXdETmU5RnJ3cWcxT3FJZ3NEalNmZDN1X1pRaS0yV0w0X21NZ2ViQ1c5UDUxczUxdEk?oc=5",
+      "published": "2026-11-02T08:00:00+00:00",
+      "type": "unverified_news_signal"
     }
   ],
-  "prospects": []
+  "prospects": [
+    {
+      "id": "57792376eef4f32b",
+      "name": "Aster DM Healthcare",
+      "emirate": "UAE — emirate unverified",
+      "score": 90,
+      "confidence": "News headline candidate — verify UAE hiring and payroll relevance",
+      "evidence": [
+        {
+          "title": "UAE jobs: Aster DM Healthcare to hire up to 2,500 staff a year across region as it expands network - Khaleej Times",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPM1gwNFVsT0hHMHpreUgyU0NJNkIzbGs1dTc1UkJIYjBUZmM5TmN1dFphZ3JYVWFuRmlKVXFzTVNUYTZ4dnpDdUdFNi1kbHV1R1hXdWhiWk1tM3VydnJMdllxTHlTaTRIazFZUVpsVXFGNDN1MEpEZU9UWDRvYllPWWdOSGFOMV96Zkxqa3J3Nl9vTXhsWXhfNWZrT3g1V0NMbldHZFZtR3FpREZYRTBCcDdFOVE1S05la01SOdIBxAFBVV95cUxPbkMyVjNhTTlkR05jRzljME5YZ1hxZlJhay1aTVYtRG5NRHpSaEg0SDJjTndSLTFtM3ZLd2xIZEI1VXAtTkpiOHdsYXVqNVJBaENSaDJxR1dqM09kN1lLWkVxM0drZ2p5RHhwU3dCb2xTcmVwX1F4enJvNlZFaXI0N293VTlnaHBVVzBIblp0YVBBN1pncGRzcFdVSG5fd1lxdF8teUQzbTNqYVEzT1FQQy1pbWVsSVF0RTJVa0hhOWlVUm50?oc=5",
+          "published": "2026-11-09T08:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "id": "666c5dc6d038eb0d",
+      "name": "sign agreement",
+      "emirate": "Dubai",
+      "score": 65,
+      "confidence": "News headline candidate — verify UAE hiring and payroll relevance",
+      "evidence": [
+        {
+          "title": "DMW and DataFlow Group sign agreement to launch DREAM platform in Dubai - Zawya",
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNWFVHWEthLUJMLU1UcFBhdmd2Ylc1MDJsVUdaRnhUel9DMzd5VWNLQmxuM255bjk1MC1pU2hwb2F3OWVUbGVka1A0aDVZdnkxazBSNkhpQ1Q3b3k1Y29jWThhX1lWcEZ6THVkczBVRTdmbUU3Zk1qUGUzVHo5NXJFMG94b3o1QURULU9GN1Vhb2FEYlJlTnlCd2gzS3Jrd0x3V211czdjNFVVbU9vT21mSW8xZDB3ZVR3Undmc3FHOFlzQmdZbFNMVFR1Ung3dw?oc=5",
+          "published": "2026-11-16T14:08:00+00:00"
+        }
+      ]
+    },
+    {
+      "id": "44ecc2fe96ffdf81",
+      "name": "UAE employers",
+      "emirate": "UAE — emirate unverified",
+      "score": 65,
+      "confidence": "News headline candidate — verify UAE hiring and payroll relevance",
+      "evidence": [
+        {
+          "title": "UAE employers plan 2.8% pay rises in 2027, but hiring appetite cools - Khaleej Times",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOSlB0a2FGSDhBelNtcktkQ05UZjBVcHdJWFNZVXkwMklac2hkTUpTWmVtaWNZNHNnZ1J5N01DMUhVeEhpV3YtN2ZZX2FtM0QzSmI1X1ZtZ3J4Sm9iVGl3b3ZmMHZFZXNxdG5xSF80MGtwZktseE9XMjFjWjZ4bkZLRVdTT3FxSE9qNGxMaHVmMW5hd1dqMEFmRFlBZjNtOGs1dE9QUGRB0gGuAUFVX3lxTE9UR2NEM0ctNHpnT1RBZTF0ZFBRM19oZDN3S3pYd3V1a1IxX2hQdmRKNS11SFV4NWUzbk0ydUdiZV9qYXZxcENYOFZHNDY1Z0RnN2VBbEpmc2dsaXUtWlBMNENocjBPWTBZTnBFUy03dWliTVRTblE4eXJiSTRsR29LRzc0Y0gzb1BqTFg3YVZ2bTJQTlBJcmV0S3o5enlaeWNHQ192RGdscWphVTMwdw?oc=5",
+          "published": "2026-11-16T06:16:30+00:00"
+        }
+      ]
+    },
+    {
+      "id": "16a380055d3373c4",
+      "name": "India-UAE corridor is",
+      "emirate": "UAE — emirate unverified",
+      "score": 60,
+      "confidence": "News headline candidate — verify UAE hiring and payroll relevance",
+      "evidence": [
+        {
+          "title": "India-UAE corridor is open. Crossing it is a cultural job, not copy paste - Adgully",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQOXZPLTNtaUs2QjZUeU1XM2I4RjJZam5JQ1haT1IzUjZ2RXJ5ZzVsUjdiVm8xRk51VWVuOERsUHQ1ZjVRc0Q0X0lUbzhFcXBWVkhXUm5NamwxTHhCWDZoQWNBbDdnRnFqQktCdjY0SlcxNXdJTDBKdnVmNkxXd3ptRFlsaGlHakxJWW1tWXRXQVZOcEowc0pzVnZoeE5QSXQtT0UtNHZOTmRmdw?oc=5",
+          "published": "2026-11-12T03:31:20+00:00"
+        }
+      ]
+    }
+  ]
 }
