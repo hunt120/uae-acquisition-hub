@@ -219,7 +219,10 @@ class Gemini:
 
         return sorted(names, key=priority)
 
-    def generate(self, body):
+    def generate(self, body, *, try_other_on_rate_limit=False):
+        fallback_statuses = {404, 500, 502, 503, 504}
+        if try_other_on_rate_limit:
+            fallback_statuses.add(429)
         transient_failures = 0
         last_error = None
         while self.models:
@@ -228,7 +231,7 @@ class Gemini:
             try:
                 return self.request(f'{self.model}:generateContent', 'generation', body)
             except (GeminiHTTPError, GeminiNetworkError) as exc:
-                if isinstance(exc, GeminiHTTPError) and exc.status not in (404, 500, 502, 503, 504):
+                if isinstance(exc, GeminiHTTPError) and exc.status not in fallback_statuses:
                     raise
                 last_error = exc
                 self.models.pop(0)

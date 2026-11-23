@@ -110,7 +110,7 @@ def make_profile(client, employer, now):
         'contents': [{'parts': [{'text': json.dumps(employer, ensure_ascii=False)}]}],
         'tools': [{'googleSearch': {}}],
         'generationConfig': {'maxOutputTokens': 4096},
-    })
+    }, try_other_on_rate_limit=True)
     facts = grounded_facts(response)
     return {'name': employer, 'researched_at': now.isoformat(), 'facts': facts}
 
