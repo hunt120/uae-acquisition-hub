@@ -6,6 +6,9 @@ on:
     paths:
       - discover.py
       - test_discover.py
+      - research.py
+      - test_research.py
+      - index.html
       - .github/workflows/discover.yml
   workflow_dispatch:
     inputs:
@@ -13,6 +16,9 @@ on:
         description: Verify live discovery without publishing signals
         type: boolean
         default: false
+      research_employer:
+        description: Optional public UAE employer name for a single research brief
+        type: string
   schedule:
     - cron: '15 5 * * 1-5' # 09:15 Dubai, Monday-Friday (UTC+4)
 
@@ -57,4 +63,26 @@ jobs:
           if ! git diff --cached --quiet; then
             git commit -m 'Update public UAE discovery signals'
             git push
+          fi
+
+      - name: Research public employer profiles
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          RESEARCH_EMPLOYER: ${{ inputs.research_employer }}
+        run: |
+          if [[ -n "$RESEARCH_EMPLOYER" ]]; then
+            python research.py --employer="$RESEARCH_EMPLOYER"
+          else
+            python research.py
+          fi
+
+      - name: Commit updated employer research
+        if: ${{ !inputs.dry_run }}
+        run: |
+          if test -f data/intelligence.json; then
+            git add data/intelligence.json
+            if ! git diff --cached --quiet; then
+              git commit -m 'Update public UAE employer research'
+              git push
+            fi
           fi
