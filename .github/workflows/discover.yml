@@ -2,15 +2,39 @@
 name: Discover public UAE hiring signals
 
 on:
+  pull_request:
+    paths:
+      - discover.py
+      - test_discover.py
+      - .github/workflows/discover.yml
   workflow_dispatch:
+    inputs:
+      dry_run:
+        description: Verify live discovery without publishing signals
+        type: boolean
+        default: false
   schedule:
     - cron: '15 5 * * 1-5' # 09:15 Dubai, Monday-Friday (UTC+4)
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m unittest -v
+
   discover:
+    if: github.event_name != 'pull_request'
+    needs: test
+    permissions:
+      contents: write
+    concurrency: discovery-${{ github.ref }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -22,10 +46,10 @@ jobs:
       - name: Discover and AI-screen public employers
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          GEMINI_MODEL: gemini-2.5-flash
         run: python discover.py
 
       - name: Commit updated signals
+        if: ${{ !inputs.dry_run }}
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
