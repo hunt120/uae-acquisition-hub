@@ -1,3 +1,494 @@
 {
-  "signals": []
+  "updated_at": "2026-11-23T07:14:14.365220+00:00",
+  "feed_successes": 5,
+  "signals": [
+    {
+      "id": "08517af006519faa1d",
+      "title": "Abu Dhabi OFW turns to cleaning toilets for a living after losing job - Rappler",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNRF9KRUZyUVI0M1Rldy1fWXgzbDFQOXZSNEJCN2JXMEk2bV9XbjRoTDhQNExrU0ZDbktKMzlyazhSNzJMRGZLdG5PaGVXMlVIaVNQVWlpbWprV0RhbjFYV2FyMlVMUGROb0Ruc0ZNZThKSm9OZHMwUmxpQ2Q4empkWkk5dmxVVm5iUjFYV191aG1xNTN0QXgxT19R?oc=5",
+      "published": "2026-11-23T04:56:06+00:00",
+      "query": "Abu Dhabi company hiring new facility",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "2b32a22961ec9d2c0b",
+      "title": "Over 100 repatriated Filipino seafarers offered job opportunities at DMW fair - The Filipino Times",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQeWdQTElYMThiQ245VGJieFVKNDNTc0FFSjBoaElRenhfSExVWGh0eHdYa2N1ME0zcEljYlh6UDlsRnR2Ml8taXRjWnY3OXptZmlyNzJ0c05VSTZZQ0ZwVVdIT1JYcHdnRlNNSFBzMVYybE5qWGNXcS1DeWdHbURJcC0yOXVqNU1adl9zbGsxMnZHc0Zsbm9lMjRJNnUwc2U5dGE0cmhUaWVtaFpiZXg5UTl5eTZhZnBaSEtZRHVPTkdDNjJDSWc?oc=5",
+      "published": "2026-11-22T11:40:33+00:00",
+      "query": "UAE company hiring hundreds employees",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "b98dcd8c5e7211431e",
+      "title": "Filipino real estate executive William Thomas Mirasol named CEO of the Year at the Asian Business Leadership Awards in Dubai - The Filipino Times",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNb2ZWTzlmZmZUX0ZWU0xlNDFBX0s0aFlqRmJDRHQxdTdkaF9Zd01aR1lJZU4yT0Z1dU42NUJyT3ZmUmp0eXVfTDV6RnBrV25qNzc3NVpQM0pIODFKXzIyM3JBbVJ3WDhZdTUtWFo0X2MtWHNKX2VfS3NpVXBLNVFld3NLZ3dYS1hHNXVTMVhFWG5BbHRxZDd0R2RucG1xMzFHWlBFam03ZkVfdGVhTW45aWRIa2FnS1lHV09Bb3dPZWhMLU1yTVd6TnNUM09HMWc?oc=5",
+      "published": "2026-11-22T07:25:38+00:00",
+      "query": "Dubai company recruitment expansion jobs",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "630cd0f42ba57a2eb3",
+      "title": "Manufacturers warn additional tax may trigger production decline, job losses - The Guardian Nigeria News",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNV1BTbXlObHFYVlBSSmswTWdpRG9VWTZXamhTR2d4bnB2aG1fYklELTgyYldsWkYwV0gtV1pVbVlYalRVaG9jaG9vWXliZjBhLUFoMWszaFRuVUVCY1MwejUwRzBkeEpZd2dBMVF5R1hUY3RrRUxuMFV0ejd4NjdQLW1oUUVERnlaVjhMU3puSnFpVldQR09fTEJMWnZhWkZLT1V3TkZ0QTZtR1VYTG42VG05clc?oc=5",
+      "published": "2026-11-22T05:10:48+00:00",
+      "query": "Dubai company recruitment expansion jobs",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "41c882e6a4c7402ad2",
+      "title": "Over 100 repatriated Filipino seafarers receive reintegration opportunities through the Department of Migrant Workers Job and Wellness Fair at the DMW central office in Mandaluyong City, according to a news release on Sunday (Nov. 22, 2026)",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQRS1yU0ZkNm9QUUY1OXVyZWprdHMwaVZZMTcwOWNjSTJqc2xOY3hMYzRvUHRJVTVSWk9iQVI3Q2g1cmtEeEd4cGxZdEpfdWoxdXJqZU1UX1p3YWJQM05wckFHaVV6QkxUZjR3XzFOenZVOG9lMlJLOG5Kc3dPZVdQbkhoRXZpcFctR2tqUDFJeHl2UDlJdkRfbW5HOHhFaURpbzZRM0FCeDJ2VjIzVWdQS3MtN05CTXViaVZBVkVXZVU0SzQ1dTBUbkFaSjROek5PZDgyQw?oc=5",
+      "published": "2026-11-22T03:10:20+00:00",
+      "query": "UAE company hiring hundreds employees",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "0df33d16826aed70d3",
+      "title": "About 6000 new jobs expected in outsourcing by 2030 - FBC News",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxONTBlU1pFVG41MVdkeXdaVHJpSE5OdzMxUUpGMGg4cXBXODBjMnUyRVBoak0yXzhpQ0RHMWVNSDU2a3VYS1otQ0xJTllDR0VuOWl5dXQ3MTgzX25DcUQ2ZmpTcElSZldQN0F6c0F0b1BIREtzOG1sR3c4ejdmdjZfX2QtU0p6LXlKd2tZbA?oc=5",
+      "published": "2026-11-21T04:04:12+00:00",
+      "query": "Dubai company recruitment expansion jobs",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "a59829b52d445341fc",
+      "title": "Adnoc Gas Exploring New LNG Export Plant to Avoid Hormuz - EnergyNow.com",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPdWx1RFpvTnpJei1USFNPWWVzcmRHVlE5WVQzb3cyYzN0S3RSOW1YM1ItdTdUVGo5Skp3VjZka2JucXV5UUNSeXNJMThBQzZkUHIwWkgwTkIxM0RpV0FFY3QwSEVqN2ZESmR3cFJndVZmLWdla2NsaVRhYms2VEVfbFFfMFhVbUdNNWNOLWxDYzA?oc=5",
+      "published": "2026-11-21T00:14:35+00:00",
+      "query": "Abu Dhabi company hiring new facility",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "321bc6e9e264c6f573",
+      "title": "UAE jobs market shifts as technology reshapes demand for skills, experts say - Gulf News",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPVnZaTlNsQWV6N2hGY3M3TENaTGN5ZnQ1bHl2Nl9kTVMxaTRvSS1XT2RaV2ttQld2OE1FUE9MMGJkQ3o0M2FNY3dLNGVSVXE3UG5HX3NtdnFCcnlPckUwQUUyRXJuWmFtbXppUW5OY0JFekFNR3pSX2tkYjE2ZVI0ckNvYkNCMWd6T2t3VEREbldmd2EyTk91cWJXS2phY0NJSEtnY1NmS1ZlYlh2NEItYi130gHCAUFVX3lxTE1MMW9LZDNzWkYzSzJSYWRCWC14SkZWSHhZRU5OMXlXaE80LUNxTWx5dGlZMVBiVmliNVdmdUhtQklaeGhwU3RHdUlIQk53M3BFYm9JR2Y5ZkM1QzlmcU5MSmJLdGtvejdfbU9YQ2lMcTZQMVk0dy1MT3hEUk1uVTZGNGpaUTE3RUFZT28xbUVYTVFpdzBETDFXRTVXcDYxTHMxNGl1dTRpMHdDZ1lrTkJjM1RGc1g4dUIzSGF0Ti00czBn?oc=5",
+      "published": "2026-11-20T12:21:16+00:00",
+      "query": "Abu Dhabi company hiring new facility",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "9434dd9d9a0e86753a",
+      "title": "Dubai's Renewable Energy Sector: How Clean Energy Investments Could Transform the UAE's Business Landscape - Business News This Week",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNcGs2clIzeEMyX1BuZmxKNEE0dG9yRFBfcjlQbFdVUkhsRUNOdU5RajhPdzk3UU1JdzFvUHBCMHBBT3RFQmRNTHVDaWxnb2RRcEoySl9tem1nbjFEUWdJVGdqWEVMZGhnejNYYjFMUGFwcjFGT2Jja0dabnk2Z2N5bFNFT1RPZWgzYXNnRWpmem9sb2V6b0JzdmlaN01kVFVoSDZXZG15d2xJWXZSUkF4Y0tvWXE0Z0kyTFRXVm1XRjR6dDgyaVF3TkZLVHcwTlBrNVl2eWtyLTNtNlJBcVotNlN3?oc=5",
+      "published": "2026-11-20T10:26:47+00:00",
+      "query": "UAE logistics facilities management company recruitment",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "fa321c473866be2b6a",
+      "title": "Sharjah Ruler undergoing surgery, daughter Sheikha Bodour confirms - Gulf Business",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNZWNnV2h6QlFudDhCS2cwMnRaVWxFbVJnT3YxZF9xcVJpTDVZWnFaenBZMXFkV29jNjhyMENPdGFKYlZWeTlHck54OFB0c3B0YzJpVFRJZDU3cS0xTTIwU29ZRWN3aVluS0ZXUjFJTlVXSTVmSmpnVE53ZWY5WENxUmszUllFOVFxT0kyZE5zZXhyNGVhUXFNZW5tcFZnV0oxMEh5ZTkzLXhma2c?oc=5",
+      "published": "2026-11-20T08:40:20+00:00",
+      "query": "Sharjah company expansion workforce",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "223c3458d8ce58523a",
+      "title": "Layoff Tracker: As part of sales reorganization, Novo will cut 215 employees at US HQ - BioSpace",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFB1N2d4NnYwN0JiU181Tm9vV0dUM1c1NWVMUHNCdlZFVmRSZXpmRFp3TnBQUVJXYnFYV1VlNVBIZXU0TzY4bE5BNTd4NGpIT21aYlZHMy1qSW1HWDFH?oc=5",
+      "published": "2026-11-20T08:00:00+00:00",
+      "query": "Dubai company recruitment expansion jobs",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "c16d551e4347c1f273",
+      "title": "Inside Dubai 2040: Smart services, digital twins and a city designed around people - Gulf Business",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNNUZIWWR2WnRrREwtQUNWVHJoN0NKUWVieHpVT21DNFdDZ1JscHhtZnl5Q2dtbENMaUdlNFhrVExPNVZjRDJEeXBUdERrTWlVbDZ2NWVGNTJDd2FCTndlRldNZ3BIdXp2WW52dDA1WWFCNlQyWHdhRVNoTlhXVGRSSERLU2d0eWZLVGIxUlF1dU9RbVB1a1Jiejl6RllsX256YWtZU0NZUVRZSWJUaFJOUDB5aTMxY1FuVU5CSQ?oc=5",
+      "published": "2026-11-20T07:42:02+00:00",
+      "query": "Dubai company recruitment expansion jobs",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "f7079a038289d9b904",
+      "title": "Expand North Star 2026 to bring global AI startups, investors to Dubai in December - Gulf Business",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxON09PY2VTcjN4OFBzaGVzdWR6cUVxYVhPQXhDbmZOMUdoYXJlLXItRHZoUUktUnotUFJKU0hOQ2tsMlFzMmczYThFUGJpMTZRTXJNa1l3c3MwNXlrNF9JN2dZdTdPWWNPMWlOX0dtNVFLSFVid19BeG5nbks2MXV2X29aSVdHa1dwVW05cjU4N2dtYmxWNEZmaTRBcE5pRVoya3l0c2c1SGJzNE9DMl93NG5xa0R6U1BOaS1z?oc=5",
+      "published": "2026-11-20T07:02:39+00:00",
+      "query": "Dubai company recruitment expansion jobs",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "5b40a08f24fe166b2f",
+      "title": "UAE National Day 2026: Dubai Safari Park offers 50% ticket discount - Gulf Business",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOTDlnSlBaMUtlaEJrWFpSMkFURnF5M2NlUmdZQ0RWSTBTSUFRSkxnbm84TzcwTFVCM3FzcmlRdTBDVnd0X3hEamFweXU2VjB3SUVrdEJrUWtkcUhBcTFYdmx1dlBuNGNXU05RaWpVWC1zZ3ZoTVZubnM1V3M4MUppNjlSeXVDZUFmZE1UM3liYmhwVlNER2duamJHSTNRY2RVTDJsSEZR?oc=5",
+      "published": "2026-11-20T06:35:32+00:00",
+      "query": "Dubai company recruitment expansion jobs",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "825d5954958812de17",
+      "title": "Saudi Arabia enforces 15% Saudization quota across private sports facilities - hrme.economictimes.indiatimes.com",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPSENueVFVTWl0dTBFYjBZOUVEUmRPVDM5SnlwSUJaSjBvcU5LR2N0TVVaSjlvR2gwakVQcS00b0EtRV8xTDNheG9mMFUzMVVCUjFaaDR5d0stZXFfcnc5enF0N0M4MmdNQUtVdEM4VEczTS1VTHh5N1EzUjM1b0YwTUpMR2o1ZFVlS05QQk00eE9wQURvWkV1cEtkeGRKTklrYUJfajRYaWtVdjZUMEdEWTdiVHBkMjFkcXVub29BT29JZ1lUN2NiX0ZETk80bVhwbHBpRElXOHlld9IB3wFBVV95cUxNNjkwbWZRdl9Nc1M1cDdESWpPQnhfWG1OTFJ6UnE4MC1ncUJSV0dyekZpNTl5WUFqU0M5bU1pTUtENzlhNXFpalhBVG5rSEtHdnRwSVhKQ1dIeVAxLTNJZTBINVJrSmlmNHZFU0xQcHhPV3BRVHZrY0FzZlVlWk5lTm9WQjg1TTJuV1JyRTlNN2hfa3lfZTgwZTdEUlg1djVKSmp4ckYwZG1mbkVBel9Cb0lRRGpkcGdRWUxrdzA1WG9qXzlVVlZSakZvNDlUeFliVVB5Sl94UmYtcHhsVl84?oc=5",
+      "published": "2026-11-20T06:00:24+00:00",
+      "query": "Dubai company recruitment expansion jobs",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "cc2c102e00e71e1186",
+      "title": "Kalpataru Projects pays ₹1.07 crore penalty imposed by Dubai court over alleged employment, immigration vi.. - ETLegalWorld.com",
+      "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxOYnhaVEpUdW42NkU5US1Od1BFUjdNcS1IektNd3NwczdKQWl0M3Jjek9HSDFRa3BBLUFSRHFDQVQ1THZheVR4U2VGbDdPY2h6bkFxNUNuVlk4TnRzcHhQZWttS3NfQXZTcHBoSTUzYjd4OG5QZEZnRTdzS2g3OEx5bTczNllrb0tQOVo0bkVTYzRMMHVzbGI2dFp2Mnl3d2N5ZU0zeFdKZkhheWRnOHU5UVJWS0hLRHFodUk4dUxwVXV3ZFlYTVctbU9zMTM5aWg1OExWWF9EMlNaNktYNTlxb0xhVDI5eWpjclhVeE9GSHZSeGY4UGxVTjFHWVJKUF9pSHRwMUc1YzVqMkx50gGSAkFVX3lxTE9YOFdGWXIzM2VuRXlxaDBQLXZvYUxITXphcm1fTjJWNVpjUjB1MHBGUTNZTndMYWxMZUVYaWNUSEU5Skd3V24tZGdJQXg4cEZ1azZNYTBCTjlPY0xlblJIU19CeDVjWGE0X2FSeDZYcTFjb0kxRkpvaFQwQkEtQjFJRjZfQWVaQ2MtRTlOWTFSLWMyclBnWUVRc0tQWVBVVl9XR3U4a3RJaWlKaHJydDlZb09NTTh4NnpnZnF4NE13QkVZUU51ekFCX0pseDkza3pjNGpycUw2NF9lcENlX0FiZ0xodllWQzVodFR6SS1ueDFzc1VMU0t5WndkR0ZERktSbV9tdDZtNTF2UExZaW1GSXc?oc=5",
+      "published": "2026-11-20T05:23:22+00:00",
+      "query": "Dubai company recruitment expansion jobs",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "19761be305432fe038",
+      "title": "US bank outage: JPMorgan software glitch disrupts payments across major lenders - Gulf Business",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQYUhFdUNpZ2pvSnVrczdWdzNtczc2bXZ3UWRCdGg4a0lVOG0yVGdxYWJrY2VVSWVfQlFtOUJBMmVDT3Q1NWkxamJRRzN2eG9nNzRGTXRsYV9CZ1VtSXZvRlpjUHlVTVdHM0ZFYllwMnFYZzU1X1U2RFJ5TlM0S0w0eHZpZlNCLXhj?oc=5",
+      "published": "2026-11-20T02:42:22+00:00",
+      "query": "Sharjah company expansion workforce",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "f2da8aac64f7d92e60",
+      "title": "ProDevs eyes 50million job placements in 15yrs with AI-Powered workforce ecosystem - Business News Nigeria",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOTmhzS2ZzaEw1S3EyVkM3U1hlWlJpXzA0UHoxbEM3cXlDZWp2UnE1eGpFWFFtdzBMZzUyakxwajdjZXh2YlU0VFRsNVVHVjVGNGZFX2JhcjdnTm9zTDVadWJ0ek5PcEpJSFZqbUhqdlFBTDk2YnhPdGUzUS04dDVGbHpxY3IwU19oQlM2TkUzbTVkR0E4SFo3Y2FmMnhzT0pHSEc1V3dqM0NxTWo0VlJEQ1FfSlhiYm9JdzdDd3pfVGpxM1cyTlE?oc=5",
+      "published": "2026-11-19T20:18:05+00:00",
+      "query": "Dubai company recruitment expansion jobs",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "974e4d9a2248e72b88",
+      "title": "Saudi Arabia releases first images of damage to skyscraper after Houthi attack - Gulf Business",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNaGhJMG9SZ01wd1haUTRSTlBvWld2ZTN2N3VGZGVfWjROQ3F4RVVFQlFCNER0eEQtRzVCM3ZVbnlYM29FRWNzXzBGMFBXbVl5TjhXMEt3RWdOYjBaVXhQelNlcU5sTUtIQTZ4ZzlITk1CZkdzVWlFMklxY2tjQ3lDUFg5c05CdFhTcXBXVzRheEFOX0hSZHVWNXhndw?oc=5",
+      "published": "2026-11-19T16:36:31+00:00",
+      "query": "Dubai company recruitment expansion jobs",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "deff3683bf691c339e",
+      "title": "Kuda cuts jobs for second time in 2026 as it targets 2027 profitability - TechCabal",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBxZ004dTVTdm9FOXVhQlJGbnhnMjhndEtQdmZxanMzMDNoYk1DX3I0eWE3ZE51TUhSRHZwdG1MR2dndmpRcHZCV2Rqdzl2dkh3U3pzd3hCT1VOZmxGeGVpQjRCMA?oc=5",
+      "published": "2026-11-19T15:02:08+00:00",
+      "query": "UAE company hiring hundreds employees",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "3729c304edcf593f73",
+      "title": "100 per cent job retention in exchange for mobilisation: the government is preparing a new model for businesses - UkrMedia News",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBwZGZJMl9ITFFFZHZYcVpFZ3MxV3lXM3FrZGRDOWowNmdRT2ZSY3BYTFJiZWtlc255WE1sTUVKZ1RmaktJSG1CS01tVjZqNXFKdVVqT0hlZW91bkF3UV9CTDBSY1FXOW45ZVo4YVYxSnZQV28?oc=5",
+      "published": "2026-11-19T14:36:12+00:00",
+      "query": "UAE company hiring hundreds employees",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "9eb34c8174b13ab710",
+      "title": "'Mama, I need you, not money': Expat workers share sacrifices behind UAE recognition - Khaleej Times",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOVG9fS19Bam9fcDNFYmxZV3V2SEduckZPYmxsbEVic1FZSVoxNy1jTkNZd2o1Tm5lTDRINFhsRjRMVmpJcUlfeTBZUWRSUVN3TmF5YnlDTkhoUGhMNDZEX242VkF6cjJzc1F0OTltRkFxWkVKR2VtVG4zV2FhcC1WWVdIWVplUWxucXMxLXYyY0g5WW1ORDhJakVTRmJhY2h0b0hkUTl0WDhIczFVdjhR0gG3AUFVX3lxTE1FSExqVlRjOTM3T2RUZEdSSTJXcnJrZEZFLVJPX1dhZ0RkVnZvY1hoZUpmWTNfaHVEUk5ENHFoTlVZN3lVay0tbjZNRGc5aWtESFY3cEJVR1lwN1E1MlVpMk5qVFFRZklJa2pxTGtlRVRDdVc2dnNsQjhsR3R5bEdUY3VnRFA1TThXcDZBYjV4dEQ1X0pvanpUNnBnZ05vUGlIbVVKOGNRY0ZjQzE1N2drSGhNdlg4NA?oc=5",
+      "published": "2026-11-19T13:47:12+00:00",
+      "query": "UAE logistics facilities management company recruitment",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "2ff959d33d5f777996",
+      "title": "Emirati candidate for UN top job vows to end Sudan conflict amid war crimes scrutiny - Politico",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOY2JtZUJubGd2ZHAwZy1nU3dhQ09Pd3A5a2drSWVWZ3ZTRGRDem8yU3pseEItYlBxb2lFbkI5SE5zVVZkU3RKMDNaYy1lUHItUmlZLV9GcDROZjFnNVBmaU44S0dScUJBeFRXeUx3MWFieGJZY052X1owbS1nWUNsR2lva3FyTVBQM2tFNkRfY1E5eTluZkotaFFKbXZoRkZqeVQxRGdVSnBET0h1YjB6QkZyUQ?oc=5",
+      "published": "2026-11-19T13:40:00+00:00",
+      "query": "Abu Dhabi company hiring new facility",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "94f593c0d36214269c",
+      "title": "Saudi Arabia jobs: 78% of professionals seeking new roles despite hiring slowdown - Gulf Business",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNbDVKNzl6cDVjOGdWMWNrRU1PbUpwSGZKNVpBc292RDI1Y2V1a2dSRHhtYUhUZGZPVlhMdW5USkM1UlRYdUNzUmxtaUNoNWtyWEhFVXlnMVJjcU5Ick5JYV9mMEdBR1k3R1EydXBhaTVyMC1hQTBTSlZjOVFfLVZpTHZ3d0ZJWDlxN0F2RHN2UzdJWmZTM3NYVGxZbjVuNUE4QnpWQVdKR0NYSV90STZoOUVSS2hZNVEwcUJLbE5QYXpyVENH?oc=5",
+      "published": "2026-11-19T09:36:42+00:00",
+      "query": "UAE logistics facilities management company recruitment",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "b296114ec62c1b84ca",
+      "title": "Horizon3 Announces Major Regional Expansion Plans to Meet Rising Demand for Proactive Cybersecurity Across UAE and Wider Gulf - Global News Network Liberia",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPYVZiWnh1cWhxTXNOdkVvRnNLaGNaYzF4ZUtTNzk4WTEtTnVwYlBoQUYxRHhfNFl2UnJ6aVJ5MXEyUnd0YVZWUmlSVm85dFhzRmg2bXY0ODRseFFXVGY2ajI4eVpMOEJMSFNBUHpvZUo2aDdHdmVsNV9VaUhNa2VEZ2VPTHh2NXNCX0lUQnR4eS00RVFWMmN6TnVmdV9JYkdURHRhMzlsMUJENmdfR3ZaSEVYTVU3SUpBYl80ek5HVHpkYnpyOUVJLW5wV0VxeXVfRlhSQVpTTGFSUHRuc1FhSmFkYw?oc=5",
+      "published": "2026-11-19T08:58:53+00:00",
+      "query": "Sharjah company expansion workforce",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "45a5b9c82a88cc4ec0",
+      "title": "Minimum Salary Changes Announced - Fragomen",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE80UnB1R0JGS05lRXlqSTlJVEIzZnhwc3AxWTlwaU8yVERVM0UzV2s0WTRlVnVTLXVUazVfdHB1Yi1UWS1TZloyTWVFSFJxaTl4bXQ0S3RwX3VpMXBEU0xydlpYOUN3YW5wbHV4dHE5NkExZm9IN1ZrZTJfdw?oc=5",
+      "published": "2026-11-19T08:00:00+00:00",
+      "query": "Abu Dhabi company hiring new facility",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "f83bdf0ca915136642",
+      "title": "Top News Today: Brain-Chip Therapy Startup Raises Funding, Freshers Face Campus Hiring Changes - Analytics Insight",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxObTMzSGx0NHJQczk1ZWh2eUhEU0JoWktfdzZxcGswZnZWT1c4aUpmLWpVbGVab2FmNmFHalphRWZXYS10UGFlVi1lZUpSVGk5Uk1RdFdDakEtbDdEVXZXYU9EUkh0eTkyaTQ2VmdFU3JxM0tVWHBMcGJIYm9CMFpVb2ZtbWFqai13VWhpSTJOZTVKVWdONjVCRVg1UExXemFpZVRLbHFaUkstdGp3NERETTRUVk0xZm01cXR3amw3cTQtU1RnSzc0dC1BNzV0VEpw0gHeAUFVX3lxTE1FemluMFVkOVRYWDdad3pBWnNBcEN1N0NsR25jcndFOFc0Mi10dEstQzluWDFIbVdJX2RsbVYxc3ZQbmZCQXBoQ3lvUkgyeWdSX1YwUUE3SUJmSXMwYVBXdldIMnFyd1NXaHRsWTFsaGJJbDRTRldLaUZ6QmFDaF9jdjh1U09xU0t2dTh2d3RfNjVzVlZ2aTBLazRjZ0JlSGhZeHdHdUppT1BFYWdEQ2F2RHFEakhWNXp4X3dsUzBWcEp1d0tidXI2UVRTT24tU0lJd3F6N25lcEhkcnlkZw?oc=5",
+      "published": "2026-11-19T07:46:15+00:00",
+      "query": "UAE company hiring hundreds employees",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "326c920cdac8227b87",
+      "title": "Dubai emerges as launchpad for Sokin’s Middle East growth ambitions - Khaleej Times",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQc3Rta3p6Wm5DajBkRVJoRnp4ZmFoODRuVzk0ME03cDhrWkxhZWxGZUstYy1BMGEyZzhhWGlYLWg3WkVyLXRnRzNFNjhBZnZKa0l6STk4aXc3cUZZTEJGN0xWQ3VMRnM0M1duZGp0clpfeUZFNVZBVzFrd0didlNzNm1DZFRkY2FLeHVncWdfR2xaUlVYT19iSlV5RGZJeHl4NEl1Q2ZrSG5JMnB4X3hFbzVKcVZaRlNDbVlEWnQ4ONIBxwFBVV95cUxOeTF0aFByQW1hQUdoOVZETVZ4S2ZtblFRWDhqSHhpQUxoNnoyWG9zSTVYa25YQWpsM2UzX0VkcURwejBoNzA5emlWRW1vME9NLXFOLVd6V3JEWklPQXFZb0x0S0UxRmc3RDlySVJsdUZoS1AxcVhBeVZtbGd4N2FFSXRpNTNDeHBNWE5wVDBHV0k4bjNkTVlOaUM5UW9IRC1EeUVPWEMwNG56bGg5ZlBiWllkLUl4amx1UktLQ2RQMFpaUTlaUDJr?oc=5",
+      "published": "2026-11-19T05:17:19+00:00",
+      "query": "Sharjah company expansion workforce",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "31b3dd7a4053fd55db",
+      "title": "Did you know Dulquer Salmaan once worked at construction company in Dubai before pursuing acting; here's - The Times of India",
+      "url": "https://news.google.com/rss/articles/CBMiwgJBVV95cUxNUlQwMFZOamZQcXlUaEtmUTI0UFd3Z3FrR3ZuV3phTXlDLWVETnR0M2xYa3dBa1Bkb0ZxNk5MY2VfY2FMUjhsT0VsckJmczM4S2h5YUxjeU5XaTZ1SnU2d3RuWENMV0JPZ1VFc3dXTmgxTS1RbUQzMWgxRmhBZFdCME80WTF4R3ZvTjhROHNlNDZvai00QUhqYnVmLXc2TzJhTFFBX1Nua2sxZ2dlMDNQazlyelJqdWlyb0NkMC1FTnltQVRXRGZtZkYtUVAzUTh6SEREYjluZ1d4VHNXcS1JbmRtOVFkc3RWR0E0N3hkY3VfSTBzTEZ2ZG5VT2pUVkx2ZTBNLTduLXl2Y2pJZ1I1M3Q1SFdzbFAyb1NGZDJGMnZlS0VldE1VOVhCbWEzN2Z3YTJMLVpnR2JCY3dmdnQ5by1R0gHHAkFVX3lxTFByNVBNVkVsUXhnOHBCbUY1WnBBMG9VOG9NOEViX0hVWmowalRpVXlycDA2SW1mY2ptNWNrZmxqSGRhVE9HdjB3d1ZKZHBCRTE5UWRldXc3cndYREQwNUQ0c0p5TTVYZk9VajVUOGVnajVCdnFJc0tpUGpNS0REakVqeFRHdW1ycVFLMHVVSTVtbV9GRUVOU0FQTDA2RFV0WnJCTzZEaVlNV1d0eVp1UTE5dVFYWmE1WlQ2aF9ZaHR0QTdtcFZOMDJHV3FYdmVjb3hGR1d4VVZQSEFKSld6eUhLU0hCNzJZTGE2U1NXRnk5ZkhBNHF5elJDNE1fZU9WT2hXbTc5NGRqYmQtMlRzS2JLckNHaWFZaHNVNlV6TWo0U2JuQnZjVGppcDh0V3hqdjZzNWtxV2ZseVpxWGZzMDl4MWpSd2ZCZw?oc=5",
+      "published": "2026-11-18T07:11:00+00:00",
+      "query": "Dubai company recruitment expansion jobs",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "897e1f50c233aaa87d",
+      "title": "Tobacco pipe manufacturer announces $3.8 million expansion, 51 new jobs in Horry County - WBTW",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQZEdSUndXdnp6bkE2VVdOdDFKaGxHS3daeTFUYmkxQkhJZkdENjZVT2d3bF9zd2YtQTVLdEpZWGxWQ2ZPLUJYTW9zclJnek9NdjJlUUt0N3ExMURUTmR0Nll6Q2lFdURveWlYU3BQS0FtcVlZbXlfdjhHUkRqcnkyaHpOOTI2ZEpUWUJuQTFrVHQwdkFWd2VkN0NPbWM2bGZWQzJzVnRveUNjeGdiajFmT2hxS09QZ0NCTVI1MEVKS0tWa2MyUU9PUXlYd9IB0AFBVV95cUxQN0FTcHU5azlsNmo5ZllDVlBEVjhmMnd2anBaekNfRGdLQm5iR09LelVUTDIwUFVWdDh1dXpTUTE5bW5NWkgzUTdBS2pDS1FJTHpLeEhXYXBUaG1JX1pkaGtya3F0YjZtS0ZoSnJ2a01renA4ejVCdnhVTmVqS3RscTBNbDBXX3ZYV0c1N0dPNUFfWmFNS2t3b1VrS0JNVXJNSlBQNE85TDA3a0ZLTmViNUE5X3UtTE9GWXZFM2U1a2JQb29QajBSZW42dXhLQi1x?oc=5",
+      "published": "2026-11-17T20:50:15+00:00",
+      "query": "Abu Dhabi company hiring new facility",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "4f9b6d8908c283c44e",
+      "title": "Lenovo finds 80% of IT leaders see digital workplace as vital to AI success, only 10% have overhauled it - Gulf Business",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPSEYzLThyek04V1hsQlJKRDktUmZ0ZENpcHJHNGZqYzlBUEpTYnRBUnUzQUlneXBRYWI0a0M0VURJLVl1eVBrV1Buek5haWs3NnppNDkxN3ctS0JjUk1vblZwWjdzYWMzZGF2cE1KU0lXdk4tVnc4TnhRUWtSck9Nd2ZDc0tlMkF2c0d1NHRURkdRVm9xT0VQbzRsdUVYUU5DVldLaWJYVzFRd3RlVFVsNXZaSXNtbFZNMXVraFgzRUstd0pUN1dobFhLTXBzaTA?oc=5",
+      "published": "2026-11-17T08:58:18+00:00",
+      "query": "Sharjah company expansion workforce",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "7e2e9da426974ba12f",
+      "title": "Gold tops investment ownership among UAE investors, WGC study finds - Gulf Business",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPNlRTNFBCMVlGTWZtN1NMWWdhazhUVVZGYnNMVmp1VlZXT29WcDhicXQ2RTBzWEJUcUNRdWluUG1zb0IwaGdCTG9rWjRJekJYTC1sRTFicVd0MDZqaHptM2huZVNQYUt4elBKZWE2SGVrN2E2Y1RZaldPTGhCbktNUDg2eXk3Uzd3azlhaG5XN2hmcGdPYkN3WWtMbkhtSHBDcFFDX3VxRDBfUjZCNVdJ?oc=5",
+      "published": "2026-11-17T08:28:03+00:00",
+      "query": "Sharjah company expansion workforce",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "1bec5ab668f1eea3ee",
+      "title": "2027 Engineering and Construction Industry Outlook - Deloitte",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOZW9fNElleEEzblpsRjR0YjBVdHEyS1dEdDM2ZktYUEd5VDYzQklySVRfX1laQW5TSmJ0M3lzenFxNGs4NlpVYmR0RE9XWTBhdTJsOXlEYVNNbWFMWS1jczlVWFhBb2cweDE4WWxRQkFzM2VDckd3N0RGU29RNEZlZ1VxcXUwclFXT3Y3cVFxWExkUk1hZ0RBV0toaXJSbW1UbjdwdFdNZkp1S0wycUhBa1FyM2dKTVlxUjFoUDgxUHFsbFU1TFpr?oc=5",
+      "published": "2026-11-17T08:00:00+00:00",
+      "query": "Dubai company recruitment expansion jobs",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "e09669a99680407ac2",
+      "title": "Unlocking New Growth for Gulf Operators via Agentic MBB Networks - Gulf Business",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQV2VKT0NpWW5aM2NmSnhQUENvSmZIUGhkUmthMHhJenB5QklHQURWRUJpVWJRc3puaGNBNVdnSHJCOFJOZWdmM2FkMmZfMnlNbTBRdGV5M3dTdHg0aHh3UnR1anBwZ3pJRjE3NEx6Nm96Sk96Z1NYblpMcXpEcHpUTWZSZGNMVWdKcl9fZjZKaTlnVEFTNHFBNVA1b2ZBR213MzdPbkx1MDQ1MjA3eWc?oc=5",
+      "published": "2026-11-17T05:58:16+00:00",
+      "query": "Sharjah company expansion workforce",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "9fc95f1f2559b5e2d1",
+      "title": "Dubai airport passenger traffic falls 28% to 50.4 million in first nine months of 2026 - Gulf Business",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQODZhVkVjbHU4Y2YzUnBaVUtNT2EzNkJVU1ZhU0VwLUZjZ1NvWWlYNkxtdmc3YnpoclBFVjNzRG5TV1JxSlFHcGtsRjZPQ1V0NUdzTGU4Ty0wZlVTeVptZ2VwbWpqcmhjYnZLcDFtNVFPRXpaMTBoT2h2MW9PYnNPRzNjZjJkb1pERGItQVgzaGpyTHd5QUhBRWE3NWtZZDNNckprMVc3bHRPek5RTmZlaU5vT3JheFJzU0JuTWNIMEg0aDd3dm9F?oc=5",
+      "published": "2026-11-17T05:32:38+00:00",
+      "query": "Sharjah company expansion workforce",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "3105f247f3ca646012",
+      "title": "United Airlines restores systems after technology outage delays departures - Gulf Business",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNcWQyTDFtSVQyTVNFMFk4VUpCbTVzb2dyVlhlSU1VWlVQMndSdkFGTVY3WGhiOFB1UG1Yc1gzNjZoand3SDdrTTRqY3JpWmNmQ1ZLZ056V01qMjVHeFFRNEdCZkdiVHRvVVBPaFRDSGtWWkVlblk0SlJGUjcwRFZxSW5kNzFsdFlEV1BrQ3NReVpnMW5Cc0tmRl9UWmloVDVNd2pBN3JXSXJXNm5JU0tkZXJpRTVrM01Q?oc=5",
+      "published": "2026-11-17T05:13:40+00:00",
+      "query": "Sharjah company expansion workforce",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "adac2365591964bcdd",
+      "title": "BEEAH CFO Usman Tareen: Why sustainability must make commercial sense - Gulf Business",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQeGdubVRxWHVGak93ZmxaSURNa1JxSndrYW9lSFpIbUk4RVp4a3EyQkJNUDBOSG9ETk1zdXV5d0dXSkk3ZXFGVmd6VFJjWXNMSkRDME5QV1FWX0MtaU9oY0dwNVRHN2RDYk5fRHZpU2ExbzNzeTRTdlFuWXZhUU1WUFF0U0ktcjRnc2toYk1rY19BRWFXZFVtUF9heGswN2xxQjZxWDF1WQ?oc=5",
+      "published": "2026-11-16T13:09:39+00:00",
+      "query": "Sharjah company expansion workforce",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "6a19879191eab28f33",
+      "title": "Usman Nurmagomedov offered career lifeline after Abu Dhabi hotel brawl: 'We'd love to work with him' - The National",
+      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQUlQ1clNjemxEUkxVa1dxdGNPUUVrVlYzYkpQejdYS3IwNE5SeW45dFdkSDBaU3BhcEhRYld0cmxmcktROE5fa0xsM2ZaRjAwMUFBWDF1eDZWdHl1X0s2YVE5cG9jYzVOZm9Yci1jMjhOQmI4LWZ4SWF2NmxnZUFvQmVyVEstM0dsY3lLd0M1NE5wSHNXeDg0MEg5aThZVUJpb1E4cTZ1RzlaUE9sRmpZTWhIM2t1a1drWnZkLUNuNy1FdHBPTUpkbEotN3h6QkUtTEU5N2o0a2dKNDk3ZG1obmxMeGRXMG5hMWI3bGZ4bmdsZw?oc=5",
+      "published": "2026-11-16T11:29:10+00:00",
+      "query": "Abu Dhabi company hiring new facility",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "762c58289c1be251ec",
+      "title": "Highest Paying Tech Jobs in 2027: Top 25 Roles to Consider - Simplilearn.com",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9zd0FuU2VqVnl3SzNpNHUycUFCTGpyQmNCZms0TktvdHdMNU1EQnhpSWVFM0lWYVpXSU42Ul9rTDFzUWlxd05JaWVhaGxCQ0l6UzZaT0xpNVlGbjZHNDYzemFvUkw3Q1RpaVNnMg?oc=5",
+      "published": "2026-11-16T08:00:00+00:00",
+      "query": "Dubai company recruitment expansion jobs",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "f7de3a0f1a2501d669",
+      "title": "Highest paying job opportunities in Greece for Indians - Y-Axis Overseas Careers",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBfeDdGbWVYdlFwOVhHdDIwTTdOZUNfZUhPaDg1NEVjTTlCb2dvMjJDR29mMTQ0YUFjbU5LUjFSZVNESGgwNm5Xa1NrOVljemdPd1Y0RXExLTg2X1RiNTdaTkl1Um8tWmpHcHdtdXdwVER1ZU5BN2c?oc=5",
+      "published": "2026-11-16T08:00:00+00:00",
+      "query": "Dubai company recruitment expansion jobs",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "6f23fed8f57bff3586",
+      "title": "Mawaheb Talent Hub expands access to career opportunities for young Emiratis in Al Dhafra Region - مكتب أبوظبي الإعلامي",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPSi1QckVQT1N5ejl6Q0JjeFA0ckkxSG1uSFZvLW5ndHRFN3dTSmtFM0N4VjhUQUhVVF81ZWFxTC1Od2xmUnkza3Z1alZ5bFpDVXRXVkltQWNWT3NxRUZQSDdxa19kWXBoWnJYOVVMYjMxWXFnMVhmSV85QzhrZTVXWXhyVkQ2STFpdTNmcnFOdHhoZHJVVFJtSEZkSVF0QlZ1YlJfOXI0MkpNZEM4bDZmR29VTTV2cWd3Y0k0dFY3Z0dSTjNDbktzb3FfdDY3dndzNlZ2STBqUjhEdk42TjRNelZlTS1FRTQ?oc=5",
+      "published": "2026-11-15T11:00:06+00:00",
+      "query": "Abu Dhabi company hiring new facility",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "26b715a552ac42b33a",
+      "title": "Weekly market commentary - BlackRock",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxORkJPa3I0ekJyVEI0RFJhY210TmplVHJZQ0xJNy1qenNkc0lMMHk0TmZwdDV1TEVZNmJoV3dfVlNTT3UyZHE5Q01SdmQ4eDd4WjAzZVhFMFB3VUd5QjlYXzZ5MWFRYzdIQVRVM1JMZXNyQ05aTExrejM4cHdBSktKSlJOOWxkY0V4YkNRRDZZTzlDZUYzZHlUWXdhTFUxNXJSNXc?oc=5",
+      "published": "2026-11-15T08:00:00+00:00",
+      "query": "Abu Dhabi company hiring new facility",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "9974d247e1ee8f9417",
+      "title": "How Mark Carney Can Rescue the UAE’s $70 Billion Investment Commitment into Canada - Resource Works - EnergyNow",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNSWltYzRxV1MtUkc4R1FlZjI2S2U0MzdLekVaV2s4aUNvdWV5QzVnVlljMXd2djd5S2w0NzVIRUtrbjlITXZMak9EOXFDVjFsWmlXckV6TmVXd0M5bU1YTWtmQmFmeXpUR3p6a0ExcUNmbE1HNExRYXUyTnRUZjZTdzhYaFE2SWNrcjM3VHpyQ1pHR1BrZnBGaTRRT1ZRSVhFVFhYZndHRGFOMThtdVkzSVFkdGVOM0xGMWxXNmZtYWFlYkU?oc=5",
+      "published": "2026-11-14T09:54:56+00:00",
+      "query": "UAE logistics facilities management company recruitment",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "299afd69933456d9a1",
+      "title": "Disney layoffs: 100-200 jobs cut at Imagineering; will India employees be affected? - IBTimes India",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNcm84NHE5MF9fVTlSR3VzdGtTTGFrSTFhTXVIQjVESExPMTZ5TVlJUFFKdmp5alNfMy1Ha1BJY1Yzd1lzNFNjSmMzM3paZFZZZjZzc01JaXpINHZLRnNiOFpDZDVEcm5TYUlNNUdHbUlqbzByRElaMXZkSkdyZHhfWDQ5Nm9tX21lbXJjd3Y2ZHVDMXRSYVQzcGxDaGhlbG5xLVF1YkhrMXRRYmRyNTJz?oc=5",
+      "published": "2026-11-14T08:00:00+00:00",
+      "query": "UAE company hiring hundreds employees",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "7ff9eaf83f54752722",
+      "title": "UAE hiring boom: The sectors creating the biggest opportunities - Arabian Business",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNRFdOT3JFamZQUUtlWkZhTEdTQnZNXzVvckJCS20xRU85SmtCWDJ6OTd3QmZzbGxwcGN3QkhYclpmVThsYkRZZ19wUXN4M0lJYmRhdjVqMkRIQU5LbWp4YUV0RS0zSkE2eWZXV2VBT2xHNTJ0QVUzeHZ2aFBnNi1vbzFqRGYySXR1X2JnWTNaeDNSQmQ5YVhEUVdFN201V2UxM2c4?oc=5",
+      "published": "2026-11-13T08:00:00+00:00",
+      "query": "Dubai company recruitment expansion jobs",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "224e0113e3fea71fc5",
+      "title": "In-Demand Jobs in Saudi Arabia for Indians - Y-Axis Overseas Careers",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9EWWIzcVJjbndXX1JuTkJVamxBYVJmc1A2a1VoTm9GeWZOakZROThidlY1djFNRE01c1ZVVXpLTmlJNHh1RmRNT2RrY3JIY1pycGI4ZFhGbDY0ejBIM1FLQ0RqNnhBdUxfMS03VlRaVUhwbm12dDZFOWNUVHdJUQ?oc=5",
+      "published": "2026-11-13T08:00:00+00:00",
+      "query": "UAE logistics facilities management company recruitment",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "a4bac53eea196859ea",
+      "title": "In-Demand Jobs in Luxembourg for Indian Professionals - Y-Axis Overseas Careers",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE03LVJSSUpVT3Y1OThGS3ZLR1BnRDNQM2VMVkVfOTJQTDZjNnZVTTlyQV9udGpwYjAyUWkwR1o3WG5hUkV1M190VGN0UU1kVmtKYmhCRm5aMl9QNHBQa3pRcE5YaWhzU1ZjUGtxNlZiMi13SXhBVlZYRnFkRQ?oc=5",
+      "published": "2026-11-13T08:00:00+00:00",
+      "query": "Dubai company recruitment expansion jobs",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "52940f0c8025e7f316",
+      "title": "Malta Work Visa 2026 for Indians – Work Permit, Eligibility & How to Apply - Y-Axis Overseas Careers",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1rd1RzYWQ5cEZ6MXVpY0R5am1wNmpCY0lmdHZlUHdac2czMmN3eDdyZmMzV2w0ODE2LTZnWnA1cHR0VnpHU1gzOWh2Nkl4SHdz?oc=5",
+      "published": "2026-11-13T08:00:00+00:00",
+      "query": "Abu Dhabi company hiring new facility",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "5961c2962953e53124",
+      "title": "Belgium Job Outlook: Top Jobs, Salaries, Work Visa & Shortage Occupations - Y-Axis Overseas Careers",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1lR0VkZlBnc2hSdkVZanlRRjBKUEVkanFWOXdsX2p3YWE2LWo3Ylh6VlRvZUE0UTZJdVFnM3JXSEdWRXFEMU94bUlWekE3bVlheWN0WFdn?oc=5",
+      "published": "2026-11-12T08:00:00+00:00",
+      "query": "Dubai company recruitment expansion jobs",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "f42b1dbef6ab362d01",
+      "title": "The weird universities that will get you a hedge fund job in Abu Dhabi - eFinancialCareers",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE4zeHVQWTVmbUpqdG11Skt4dUdfTThkR2YxOGtGWEs0bDJTZjlkbHRvbzJ5TlZUbllMejhJVU5UdzVYSU9yOXpqSndJOHhRT3g3X0xBY3NCem4yZXlJeS1yNlJkT0Uzc1RkQ2RLeVd2V3BaMjdvZlE?oc=5",
+      "published": "2026-11-12T08:00:00+00:00",
+      "query": "Abu Dhabi company hiring new facility",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "1a5221c3bfb081bef3",
+      "title": "Unilever & Iron Mountain Establish UAE Logistics Partnership - Supply Chain Digital Magazine",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNTkRTR3pyc0tKU2tmMThCZUM3RHpING1OYmxRaHZkU2FMYkN4WG9DejNFV0pJaDh4SjFzZmlpTGd3ZmlDdFZmMndpbVlsbUxEYmpGeUZSNjJxcTNONlV4Wmt0and2andDOEY1R1E2SkV1b29pcE0xWUhFeERGVGJfdks1al9WWHJ4Rno0bDBOVmRVekxZdzlhbTJ3?oc=5",
+      "published": "2026-11-11T10:52:28+00:00",
+      "query": "UAE logistics facilities management company recruitment",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "253cd4c83e3cfc3744",
+      "title": "PepsiCo to cut about 1,000 jobs in North America amid restructuring - Gulf Business",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPajhkT2VOVG9fcTAxWDNlc1dHeGdHREQ3OVlqMGloMzNMUVVUWmR3Z2MwLWxHNHZNZTFJSEh4VV95X0hNY2dQWDdrcl9zSzNIZU56M2hFZ3RqbWVpN3UwY3ZKNDZZeVZaX3VEVVlWWXVyNS05UTF3N2htRnY3ZG1mdHdMLVQ5aE9GTk02R2ZKRUFrYmx6cWRTWUVPT1FmWi12YTktLQ?oc=5",
+      "published": "2026-11-11T07:36:09+00:00",
+      "query": "Abu Dhabi company hiring new facility",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "7a3c10df3d43ba53c7",
+      "title": "The $63.4 Billion Innovation Drain: Study Finds Unexpected Tech Costs Force Cuts into AI Investment and Hiring - Via TT",
+      "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxPRnFJejcwMlpqblppc3JUYUROZDh3Wjh3UThoR2dPcTl2S3p5NTZXV2dRN3g3Q2pUVDdmd3ZaMTl5aU9kbTk4NmdVeC1UZW03WlU0Q0FSTzR1OUdUTnoyWU1KUGE2MXpTemhsS2JLeFBQOU9Ebk1mM1E3bnlSVGo1MnBGX0dsamNlSEFQS1dmLW4wZ1VUdGxoVV90eVRBWmNwOVVwelhDX0xqUGtQSWhLNnBDUWh2YTlwdTliam9IRFB1T00xMlA3bUxyOV9NcFVJX3hOVUVON0NFMWNkMVhSdWIxbGZaQURWTlJjWUZYRGRwSHhlQ2pEd3JYWHVhaXpDeHJkaV9iRnpUODE2ZlRF?oc=5",
+      "published": "2026-11-10T14:00:00+00:00",
+      "query": "Abu Dhabi company hiring new facility",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "dc96eaf575b4bd2b94",
+      "title": "Business Hundreds of jobs lost as firm goes into administration | Bristol Post - newspaper - Magzter",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPS24yMDNBWXlTVXdJYVBWWG1yNUptU1VoZjcwTmZTLWNGemgxRlV3YTFVblF2dE5MZHQwMVZTTVhFZWtJbUZfc015QVFlcWV0MzlwN01BR3BQTzFsZFFYUmpVcWdoczVOVE1fWTNNNTJuUFVxQ3pTRDMzRDFOLTdoNVVLbE5XVDV3THJQLUpIbjVQbzFhdGFab09VMk1kQXJCVjZheldSTDNVZ1Q0dm90UnJjQUlONzU2Q0E?oc=5",
+      "published": "2026-11-10T08:13:44+00:00",
+      "query": "UAE company hiring hundreds employees",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "7d58fecc94e4f82828",
+      "title": "Skydance Lays Off Game Developers Just One Month After Its $110 Billion Warner Bros. Takeover - www.techtimes.co.uk",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPZFE5dWliaUZlaDA4UGdqQjlXaloyZWpHUzZfV21nR2JWRHdFdmUtN0VNbWNSa0ItR1RwUVlOYVo4NnpBWjQ5Ny0zVXJZcDIxRlZrSjB4ZVZ6a3NsM1NQb05MakxsS3lCaVlnbHpZSkwxNkhMMHdkRmR6M040dHA3MzJMV2pjOW9ENjI5cG9fYw?oc=5",
+      "published": "2026-11-10T08:00:00+00:00",
+      "query": "UAE company hiring hundreds employees",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "5b41649ff4622b9e38",
+      "title": "C-Suite Job Titles: What Do They Really Mean? - Business.com",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1HSE9HT1c3TDBOWGlmRl9GTlBiNkd6SW51dWYyTnBscWpkVEUyZl9jR3NRc3FxaF92blhXR2NCZ3Fac09tdGgyQkQ1WDdDVHUwUFdfOC05TmtrYTFpelE5Nk1Vdw?oc=5",
+      "published": "2026-11-10T08:00:00+00:00",
+      "query": "Dubai company recruitment expansion jobs",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "77f6e8d7a0765beb8e",
+      "title": "Iceland Job Outlook: Skill Shortages, Salaries & Jobs Trends - Y-Axis Overseas Careers",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5GTXB6NEFCeUJzQjh3UmV6aEV4czg4ZGludXlFb0lwRldRX25CbTVoSzdBNUt0d2hqWXNWTU9wRzJHTjJ5TnNXTlRVSXVucXhWcHdNTUJn?oc=5",
+      "published": "2026-11-10T08:00:00+00:00",
+      "query": "Dubai company recruitment expansion jobs",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "fa5d1979a33a1275ac",
+      "title": "Iron Mountain opens first UAE logistics facility at Dubai South - Logistics Middle East",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOTE9ZNXZlbkYzaC1ZS2xsblgxYThwcTVMS1ZPMl92SHZCUTUzc3ZhTUZVYmZ6MmlGUTJkd3pqbGRxX05SYm55bjZEWjhKOENkQ0tUcFNCWnhnUXRTR3MtcXI1a2p4VmJSWTBza1NScGRVb0pmaUVZR013OVFpU0VNUVFaU3A2bER2Z0dKb2FDLXFtRXU5cWVoRlVtdXF5TnhtNHJJUGJPaw?oc=5",
+      "published": "2026-11-10T08:00:00+00:00",
+      "query": "UAE logistics facilities management company recruitment",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "2709fcdc18bee0a2df",
+      "title": "The changing relationship between warehouses and customers - Logistics Middle East",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNaHY0bGtUbDBjcHh0ZTFfRTJGR21ubTkxZEsyQUNrVGZkZldNeUNCYWZLTDRTYkZzYmttMEotRjh4ZmlNZHJHalhPRko4RTF0Q1dCWk5FU1RnOEJta2FORlJYY1ZQaDNCUXlEMlZZZjVneEVtMWtsc3htWWlzeTZLX2RhWTE3UFZaYktOU0xsbGE2VEpmWmZ6YWduaUV5U0NJc1hXanNSb0M?oc=5",
+      "published": "2026-11-10T06:32:40+00:00",
+      "query": "UAE logistics facilities management company recruitment",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "e45f2df878e8a2c6b2",
+      "title": "Dubai South opens Iron Mountain’s first UAE logistics facility - www.wam.ae",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOeTZsNHhCNkx0bUwyT1pWZVQtTWpfSDFlUldjcnhnMUJSR2V1cExBOWI5NVZ4VVpfa2l1TWVjV2lpMnE4dFBQMU5oa3c4Q1J5RHlkcG4xeFlweVpHZVRoaVFKWkszM0R4MzgydDhsT0dUbUdrSEE5bE96RDdzcGVqamN5QzQzS3c3aVo2VC1vNWpMOTg?oc=5",
+      "published": "2026-11-09T11:37:23+00:00",
+      "query": "UAE logistics facilities management company recruitment",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "059da6dcfaed134daa",
+      "title": "Greece work visa: Eligibility, Requirements and Visa process - Y-Axis Overseas Careers",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9hZ0k0MUhCWlUzZ3A1dFM5MTBmbVRvX2wyeVJENGdxN3poRktxY0FxblBaR0ZPQ0tCSkwxUVBxMERBRWU2T1RvbzU3Rm9hQkNTalE?oc=5",
+      "published": "2026-11-09T08:00:00+00:00",
+      "query": "Dubai company recruitment expansion jobs",
+      "type": "unverified_news_signal"
+    }
+  ]
 }
