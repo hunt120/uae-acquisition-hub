@@ -50,8 +50,10 @@ function showProspects(){
  var shown=prospects.filter(function(p){return (!priority||priorityFor(p.score)===priority)&&p.name.toLowerCase().indexOf(query)!==-1});
  el('prospectList').innerHTML=shown.map(function(p,i){
   var evidence=p.evidence&&p.evidence[0]||{};
+  var eventLabel=p.event==='hiring'?'Hiring signal':p.event==='expansion'?'Expansion signal':'';
+  var eventTag=eventLabel?'<span class="tag">'+eventLabel+'</span>':'';
   var already=db.companies.some(function(c){return c.name.trim().toLowerCase()===p.name.trim().toLowerCase()});
-  return '<div class="card"><h3>'+escapeHtml(p.name)+'</h3><span class="tag">'+escapeHtml(priorityFor(p.score))+' · '+escapeHtml(p.score)+'/100</span><span class="tag">'+escapeHtml(p.emirate||'UAE — unverified')+'</span><p class="muted">'+escapeHtml(p.confidence||'Unverified')+' · '+(p.evidence||[]).length+' source(s)</p><p>'+escapeHtml(evidence.title||'')+'</p><p><a target="_blank" rel="noopener noreferrer" href="'+escapeHtml(evidence.url||'#')+'">Read evidence</a></p><button type="button" data-approve="'+escapeHtml(p.id)+'" '+(already?'disabled':'')+'>'+(already?'Already in Companies':'Review & approve')+'</button></div>';
+  return '<div class="card"><h3>'+escapeHtml(p.name)+'</h3>'+eventTag+'<span class="tag">'+escapeHtml(priorityFor(p.score))+' · '+escapeHtml(p.score)+'/100</span><span class="tag">'+escapeHtml(p.emirate||'UAE — unverified')+'</span><p class="muted">'+escapeHtml(p.confidence||'Unverified')+' · '+(p.evidence||[]).length+' source(s)</p><p>'+escapeHtml(evidence.title||'')+'</p><p><a target="_blank" rel="noopener noreferrer" href="'+escapeHtml(evidence.url||'#')+'">Read evidence</a></p><button type="button" data-approve="'+escapeHtml(p.id)+'" '+(already?'disabled':'')+'>'+(already?'Already in Companies':'Review & approve')+'</button></div>';
  }).join('')||'<div class="card">No matching employer candidates. The feed may not have extractable company names yet; do not treat news headlines as companies.</div>';
 }
 function loadSignals(){

@@ -123,3 +123,23 @@ class ExtractionTests(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+
+class OfficialAnnouncementTests(unittest.TestCase):
+    def test_verified_aliases_require_current_announcements_and_matching_headlines(self):
+        from datetime import datetime, timezone
+        from discover import supplement_with_official_evidence
+
+        titles = [
+            'Sokin gets DFSA licence, to grow UAE team to 100 staff',
+            'Blackstone Expands Gulf Presence With New Dubai Office',
+            'Dubai Taxi Company to train 400 employees in AI',
+        ]
+        signals = [{'title': title, 'url': f'https://example.com/{i}', 'published': '2026-11-23'}
+                   for i, title in enumerate(titles)]
+        now = datetime(2026, 11, 23, tzinfo=timezone.utc)
+        prospects = supplement_with_official_evidence([], signals, now)
+        self.assertEqual({item['name']: item['event'] for item in prospects},
+                         {'Sokin': 'hiring', 'Blackstone': 'expansion'})
+        self.assertEqual(supplement_with_official_evidence([], [], now), [])
+        self.assertEqual(supplement_with_official_evidence([], signals, now.replace(month=12)), [])
