@@ -39,6 +39,38 @@ try{initStorage();el('search').addEventListener('input',render);el('emirate').ad
 
 var signals=[];
 var prospects=[];
+var publicBriefs={profiles:[],meeting_questions:[]};
+function publicBrief(name){
+ var profile=publicBriefs.profiles.find(function(p){return p.name.toLowerCase()===name.toLowerCase()});
+ if(!profile)return '';
+ var categories={activity:'Business activities',branch:'UAE branches',subsidiary:'Subsidiaries',hiring:'Hiring evidence',achievement:'Achievements',hr:'Public HR channels'};
+ var html='<details style="overflow-wrap:anywhere"><summary>Public research and meeting brief</summary><p class="muted">Researched '+escapeHtml(profile.researched_at.slice(0,10))+' · Review sources before outreach.</p>';
+ Object.keys(categories).forEach(function(category){
+  var facts=profile.facts.filter(function(f){return f.category===category});
+  html+='<h4>'+categories[category]+'</h4>';
+  html+=facts.length?'<ul>'+facts.map(function(f){
+   var links=f.sources.map(function(source){
+    try{
+     var url=new URL(source.url);
+     if(url.protocol!=='https:'||url.username||url.password)return '';
+     return ' <a href="'+escapeHtml(url.href)+'" target="_blank" rel="noopener noreferrer">'+escapeHtml(source.title)+'</a>';
+    }catch(e){return '';}
+   }).join('');
+   return '<li>'+escapeHtml(f.text)+links+'</li>';
+  }).join('')+'</ul>':'<p class="muted">No sourced findings yet.</p>';
+ });
+ html+='<h4>Questions for HR</h4><ul>'+publicBriefs.meeting_questions.map(function(q){return '<li>'+escapeHtml(q)+'</li>'}).join('')+'</ul></details>';
+ return html;
+}
+function loadPublicBriefs(){
+ fetch('data/intelligence.json',{cache:'no-store'}).then(function(r){
+  return r.ok?r.json():null;
+ }).then(function(data){
+  if(!data||!Array.isArray(data.profiles)||!Array.isArray(data.meeting_questions))return;
+  publicBriefs=data;
+  showProspects();
+ }).catch(function(){});
+}
 function showSignals(){
   el('signalList').innerHTML=signals.map(function(x,i){
     return '<div class="card"><h3>'+escapeHtml(x.title||'Untitled')+'</h3><p class="muted">'+escapeHtml((x.published||'').slice(0,10))+' · Public news signal · Not verified</p><p><a href="'+escapeHtml(x.url||'#')+'" target="_blank" rel="noopener noreferrer">Read original source</a></p><button type="button" data-signal="'+i+'">Review and add to pipeline</button></div>';
@@ -51,10 +83,11 @@ function showProspects(){
  el('prospectList').innerHTML=shown.map(function(p,i){
   var evidence=p.evidence&&p.evidence[0]||{};
   var already=db.companies.some(function(c){return c.name.trim().toLowerCase()===p.name.trim().toLowerCase()});
-  return '<div class="card"><h3>'+escapeHtml(p.name)+'</h3><span class="tag">'+escapeHtml(priorityFor(p.score))+' · '+escapeHtml(p.score)+'/100</span><span class="tag">'+escapeHtml(p.emirate||'UAE — unverified')+'</span><p class="muted">'+escapeHtml(p.confidence||'Unverified')+' · '+(p.evidence||[]).length+' source(s)</p><p>'+escapeHtml(evidence.title||'')+'</p><p><a target="_blank" rel="noopener noreferrer" href="'+escapeHtml(evidence.url||'#')+'">Read evidence</a></p><button type="button" data-approve="'+escapeHtml(p.id)+'" '+(already?'disabled':'')+'>'+(already?'Already in Companies':'Review & approve')+'</button></div>';
+  return '<div class="card"><h3>'+escapeHtml(p.name)+'</h3><span class="tag">'+escapeHtml(priorityFor(p.score))+' · '+escapeHtml(p.score)+'/100</span><span class="tag">'+escapeHtml(p.emirate||'UAE — unverified')+'</span><p class="muted">'+escapeHtml(p.confidence||'Unverified')+' · '+(p.evidence||[]).length+' source(s)</p><p>'+escapeHtml(evidence.title||'')+'</p><p><a target="_blank" rel="noopener noreferrer" href="'+escapeHtml(evidence.url||'#')+'">Read evidence</a></p><button type="button" data-approve="'+escapeHtml(p.id)+'" '+(already?'disabled':'')+'>'+(already?'Already in Companies':'Review & approve')+'</button>'+publicBrief(p.name)+'</div>';
  }).join('')||'<div class="card">No matching employer candidates. The feed may not have extractable company names yet; do not treat news headlines as companies.</div>';
 }
 function loadSignals(){
+  loadPublicBriefs();
   el('signalStatus').textContent='Checking published discovery feed…';
   fetch('data/signals.json?ts='+Date.now(),{cache:'no-store'}).then(function(r){if(!r.ok)throw Error('Feed not published ('+r.status+')');return r.json()}).then(function(data){
     signals=Array.isArray(data.signals)?data.signals:[];
