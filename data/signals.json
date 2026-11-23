@@ -1,7 +1,30 @@
 {
-  "updated_at": "2026-11-23T07:22:01.351906+00:00",
-  "feed_successes": 5,
+  "updated_at": "2026-11-23T07:38:11.219571+00:00",
+  "feed_successes": 12,
+  "daily_target": 40,
+  "method": "Conservative headline extraction; names, UAE operation and hiring require manual verification",
   "signals": [
+    {
+      "id": "3c541071b377bd67e1",
+      "title": "New hiring rules: Canada, Australia, Saudi Arabia and UAE update work policies - Tuko News",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQZmZkSng1N0s0R0ZBOWxTcnp6c2tGUHpEUi12S3ZDU19yQmhSMExod3VCaDlad2dFcVVlYlk4OXY3RWZkRktTLUFWLUNja3JfM0VTWHRHb2JEbldFaHFtaHppNVRqVGttSzJ4ZVJNa3ZVdG5tTFRBZ3hxTTk4UFRMSDR5WThVQkZIQTdBMFd3NU5EcGxEM0NvU253ZkdvVjhjY19zTU5yM1NDU1ZW?oc=5",
+      "published": "2026-11-20T08:10:43+00:00",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "c5b1d73ef74a30ab5e",
+      "title": "UAE pension authority steps up Emirati recruitment drive - hrme.economictimes.indiatimes.com",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNNjBMQTdRazdVUEY1YXB3UlJpY2VoRUtyb1dWSEZoWVp3WlotS0dVX1ZfSmd2TW41ZzhGYkxMekp2TS1ob3FuNjhaZDdxeUttZHl3U2cyT3l1aU5iU08wbDNTOWx1V3hkd2xsS3phUkMwVGdyYUw3YXByNEdiSkU5UV9MM1RiZjEtWU1iMUNsLWEzOC1nOUVuRDJ3SUxqazVBajBKRk5oWUVCSGYzVzExVUlITDNKZlI2M290azVZTkhWWnRfdUd0NkFDSdIB0AFBVV95cUxNLWtMSEZrZjU2ZS1kZjZTZ2Zvc24zY1ptSmktNEpfMzM0RVdsNVU5UlpwODhURDZNZHVNdXNQSTFpVVpRZTVCSzFPSkRJdkM2QWY2Z2cwS0hha1lPbC1oU1c2VVVjd19SRlpodDVTNGV6czV2b1k2eG00QWJqYVZHU3JJbmxxVHVfamR6bjBEVFAzSnRmSmRReEN4ZzBveld5bHBrdjZnREF0blpFbkxmR01PT0M0TjhUODExOVJ4amRTUDExcy1xUXR3eHRmbHNW?oc=5",
+      "published": "2026-11-20T02:36:06+00:00",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "1a7caa61ae4a1e9a66",
+      "title": "UAE pension authority steps up Emirati recruitment drive - hrme.economictimes.indiatimes.com",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQN25MZ2FQMk9UUWhYS2ZtZWxTYWFvZE1qa0tpaDBYUEZtSzZ5Q2VheXNSU0cwMjJPdk9QNTBDRnAtanM4QUZyS2NYMF9HT3JxRTJQRTVaTEVwNnFPTFNaUkw5VVIybmxhSXNvYk9vay10b2t4VHY4cTl0dmg0N1Q0bXFDd2Y1N21TelVpY3pqWDZNb19qT2FIZUJjX0ZHUTRCcE9aTkdKZjJUNU13MFlkVlI5UnhJZ0xrb0R4bEVUU2drVi1XTzlKc2UxWTh0YVFU0gHQAUFVX3lxTFA3bkxnYVAyT1RRaFhLZm1lbFNhYW9kTWprS2loMFhQRm1LNnlDZWF5c1JTRzAyMk92T1A1MENGcC1qczhBRnJLY1gwX0dPcnFFMlBFNVpMRXA2cU9MU1pSTDlVUjJubGFJc29iT29rLXRva3hUdjhxOXR2aDQ3VDRtcUN3ZjU3bVN6VWljempYNk1vX2pPYUhlQmNfRkdRNEJwT1pOR0pmMlQ1TXcwWWRWUjlSeElnTGtvRHhsRVRTZ2tWLVdPOUpzZTFZOHRhUVQ?oc=5",
+      "published": "2026-11-20T02:30:39+00:00",
+      "type": "unverified_news_signal"
+    },
     {
       "id": "b461322bc52ce2a7a4",
       "title": "UAE jobs: LinkedIn reveals 10 fastest-growing occupations as hiring rises across 15 industries - Arabian Business",
@@ -15,7 +38,6 @@
       "title": "Cheaper workforce housing can cost Dubai workers up to three hours a day, says ServHub CEO - Gulf Business",
       "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPcVNMcThjdmJpSEx5NzJKUkdHLTNxU3ZJUzRXazlYYV8zZkVGbUhKcmhXNWVCREJwdE5qU1lodTVUTWNmMXplUmQyZ3ZsWkctNE9IQUdnM0NJZ3RCb2hfTm5EUlNzRG8xSlEyUVFEMzNxS0VYNExWeWotV1NEbDRHMVY4VXZnUUNtbTJYOU90amppWWpoQ216aEJFZ3BVaE9nREhUZFVOZHNOa2JDRVdGYXUya3hUUDFXZVJGTm1La01FeDEweW5LXzQ5WTB2RUU?oc=5",
       "published": "2026-11-16T09:13:23+00:00",
-      "query": "\"Dubai\" (company OR employer) (hiring OR recruitment OR jobs) when:14d",
       "type": "unverified_news_signal"
     },
     {
@@ -27,11 +49,24 @@
       "type": "unverified_news_signal"
     },
     {
+      "id": "2c254da0b2bfe2c89b",
+      "title": "UAE employers plan 2.8% pay rises in 2027, but hiring appetite cools - Khaleej Times",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOSlB0a2FGSDhBelNtcktkQ05UZjBVcHdJWFNZVXkwMklac2hkTUpTWmVtaWNZNHNnZ1J5N01DMUhVeEhpV3YtN2ZZX2FtM0QzSmI1X1ZtZ3J4Sm9iVGl3b3ZmMHZFZXNxdG5xSF80MGtwZktseE9XMjFjWjZ4bkZLRVdTT3FxSE9qNGxMaHVmMW5hd1dqMEFmRFlBZjNtOGs1dE9QUGRB0gGuAUFVX3lxTE9UR2NEM0ctNHpnT1RBZTF0ZFBRM19oZDN3S3pYd3V1a1IxX2hQdmRKNS11SFV4NWUzbk0ydUdiZV9qYXZxcENYOFZHNDY1Z0RnN2VBbEpmc2dsaXUtWlBMNENocjBPWTBZTnBFUy03dWliTVRTblE4eXJiSTRsR29LRzc0Y0gzb1BqTFg3YVZ2bTJQTlBJcmV0S3o5enlaeWNHQ192RGdscWphVTMwdw?oc=5",
+      "published": "2026-11-16T06:16:30+00:00",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "4b97f113d9d5ab0ded",
+      "title": "UAE salaries forecast to rise 2.8% in 2027 as hiring outlook improves - ARN News Centre",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQbWxSam1Ec3I3TnE3ajB3SDFCMm56elpZVHBIM09QeXByR3ZXQXZKaU5BVU1WTXZFRC14Z2JwbVZHS2pzWVFiUmxUV0Z0R1NwZnppZmFQc1BPTlR1NjJLRGJyR1VWTHpkNExqNXFfQnE5VFBxYnNVVXZLRmV1dW9mbVEtWTI4YU5lOFdQMjQtUm0wREFWVFFTYW43QTBhUFdCbGVZdDRoUUR6WXpxSm1IWlBB?oc=5",
+      "published": "2026-11-16T05:54:14+00:00",
+      "type": "unverified_news_signal"
+    },
+    {
       "id": "e855f09205ab79990b",
       "title": "Dubai Walk In Interview 2026 | 15+ Companies Hiring Freshers | Free Visa & Accommodation - YouTube",
       "url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE9ZWlVVbEFVU2l3YThrc00wYzZyY3puOElkMkN4WGxNZGdaVElaVERGRWxGRkloMWFDQmQzOUpHVTNpZw?oc=5",
       "published": "2026-11-14T12:59:15+00:00",
-      "query": "\"Dubai\" (company OR employer) (hiring OR recruitment OR jobs) when:14d",
       "type": "unverified_news_signal"
     },
     {
@@ -47,7 +82,13 @@
       "title": "Looking for a job in the UAE? These industries are on a hiring spree - Arabian Business",
       "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNcXpNRW95bVJkdWVKOVB4cmpELVYyUUNlV1FrT18zem9JZ1QwWk5uNV9YLVNPTFZtN085dFNHRzVpcWw3Vl83clF2dl9fbTlMY0pPQXh5cmxTMWVvNURON1M4NkFFa0t1TF9hV2V0ZWdKdk1CTWZDTzBmY282N1BvY3hZWktsZVhsbXlPay1EZzRDbXFoSW12czhtV3p0X1ZOd1QxWllMcXFEUQ?oc=5",
       "published": "2026-11-12T08:00:00+00:00",
-      "query": "\"UAE\" (company OR employer) (\"hiring\" OR \"recruiting\") when:14d",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "4b634d360fc0d56593",
+      "title": "UAE hiring up 16% as jobs paying up to Dh10,000 lead the recovery - Khaleej Times",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNSklUTWQybmdta0djQ05DTXo5a3FtVkNxeW9aVVRPcndHREN2d3Q5R1J6dVV4YTRKaVhla1RPWUlCZ1FDaXlqaGtZVEZsU1A4VUUySEd2cmZPRFJSamNNc1RuaTdXNWVFRXJtVDlGODg2NWRoLVJBNWxfdEROdHBZVGFKYzlSZWtWMXRFLXhkaGNTZHkxRmpBYzhjQkQtS1FDZEM00gGrAUFVX3lxTE1yMUFkMi1RMzd5QU1BaVFWZUsxajBJSjNrdUNWaUVCeEZsWEQ0NjFoRndBazNxQUZCRXhnMVlpcDExNlFhTTNLeFd4eHdjTmNCa1ZiVEJKMUljUmkzc0FpLUFLWWRoLUtDdE54c2xVSG4yRTd1TWNTLXhtT0hnTjl5MHBEd2l0UVhkVC1oMkVqT09MX0xpMGs4U3VGeDRqUWJNdFIzQy1jMDVLYw?oc=5",
+      "published": "2026-11-12T08:00:00+00:00",
       "type": "unverified_news_signal"
     },
     {
@@ -59,12 +100,12 @@
       "type": "unverified_news_signal"
     },
     {
-      "id": "b3b23b0a539278f238",
-      "title": "Filipino nurses chasing jobs abroad could gain more support after Dubai firm buys NEAC - The Global Filipino Magazine",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOM3VBSWdxSDVlREFaTVJyczZUb04tMzh0YTRtMXBxb3J5ek1mek5GTlVpRTh5NDJoX1ZnMlByMWJpZ04wVGhYbS1QN2pRam5oYWtrSVVwZkF1UW5xbGhmN2JCREpQYUZERFVCTTR0Y2lyQ2xRWTM4ZTVHdmZyZWtGUVpmczRTc21iaWhmelJyOXJDRVpyYm84RU4wbWx5U3o3WWlaaGVOYXNzeHhZNkd1SUxsNjBLblpiWU5kLWRvNmFDUUk?oc=5",
-      "published": "2026-11-11T07:19:57+00:00",
-      "query": "\"Dubai\" (company OR employer) (hiring OR recruitment OR jobs) when:14d",
+      "id": "94af851198c53b3ff0",
+      "title": "UAE jobs: Aster DM Healthcare to hire up to 2,500 staff a year across region as it expands network - Khaleej Times",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPM1gwNFVsT0hHMHpreUgyU0NJNkIzbGs1dTc1UkJIYjBUZmM5TmN1dFphZ3JYVWFuRmlKVXFzTVNUYTZ4dnpDdUdFNi1kbHV1R1hXdWhiWk1tM3VydnJMdllxTHlTaTRIazFZUVpsVXFGNDN1MEpEZU9UWDRvYllPWWdOSGFOMV96Zkxqa3J3Nl9vTXhsWXhfNWZrT3g1V0NMbldHZFZtR3FpREZYRTBCcDdFOVE1S05la01SOdIBxAFBVV95cUxPbkMyVjNhTTlkR05jRzljME5YZ1hxZlJhay1aTVYtRG5NRHpSaEg0SDJjTndSLTFtM3ZLd2xIZEI1VXAtTkpiOHdsYXVqNVJBaENSaDJxR1dqM09kN1lLWkVxM0drZ2p5RHhwU3dCb2xTcmVwX1F4enJvNlZFaXI0N293VTlnaHBVVzBIblp0YVBBN1pncGRzcFdVSG5fd1lxdF8teUQzbTNqYVEzT1FQQy1pbWVsSVF0RTJVa0hhOWlVUm50?oc=5",
+      "published": "2026-11-09T08:00:00+00:00",
       "type": "unverified_news_signal"
     }
-  ]
+  ],
+  "prospects": []
 }
