@@ -151,6 +151,10 @@ class GeminiHTTPError(RuntimeError):
         super().__init__(f'Gemini {operation} returned HTTP {status}')
 
 
+class GeminiNetworkError(RuntimeError):
+    pass
+
+
 class Gemini:
     def __init__(self):
         self.key = os.environ.get('GEMINI_API_KEY', '').strip()
@@ -175,9 +179,12 @@ class Gemini:
             except urllib.error.HTTPError as exc:
                 if exc.code not in (408, 429, 500, 502, 503, 504) or attempt == 2:
                     raise GeminiHTTPError(operation, exc.code) from None
-            except OSError:
-                if attempt == 2:
-                    raise RuntimeError(f'Gemini {operation} failed after network retries') from None
+            except OSError as exc:
+                reason = exc.reason if isinstance(exc, urllib.error.URLError) else exc
+                if (body is not None and isinstance(reason, TimeoutError)) or attempt == 2:
+                    raise GeminiNetworkError(
+                        f'Gemini {operation} failed with {type(reason).__name__}'
+                    ) from None
             except ValueError:
                 raise RuntimeError(f'Gemini {operation} returned invalid JSON') from None
             time.sleep(3 * 2**attempt)
@@ -208,21 +215,31 @@ class Gemini:
             version = re.search(r'gemini-(\d+)(?:\.(\d+))?', name)
             major, minor = (int(version[1]), int(version[2] or 0)) if version else (0, 0)
             unstable = bool(re.search(r'-(?:preview|exp|experimental|latest)(?:-|$)', name))
-            return unstable, 'flash' not in name, -major, -minor, 'lite' not in name, name
+            return unstable, 'flash' not in name, -major, 'lite' not in name, -minor, name
 
         return sorted(names, key=priority)
 
     def generate(self, body):
+        transient_failures = 0
+        last_error = None
         while self.models:
             self.model = self.models[0]
+            print(f'Gemini generation using {self.model}', flush=True)
             try:
                 return self.request(f'{self.model}:generateContent', 'generation', body)
-            except GeminiHTTPError as exc:
-                if exc.status != 404:
+            except (GeminiHTTPError, GeminiNetworkError) as exc:
+                if isinstance(exc, GeminiHTTPError) and exc.status not in (404, 500, 502, 503, 504):
                     raise
-                print(f'Gemini returned HTTP 404 for {self.model}; trying the next catalog model', flush=True)
+                last_error = exc
                 self.models.pop(0)
-        raise RuntimeError('Gemini generation returned HTTP 404 for every compatible catalog model')
+                print(f'{exc} for {self.model}', flush=True)
+                if not isinstance(exc, GeminiHTTPError) or exc.status != 404:
+                    transient_failures += 1
+                    if transient_failures == 3:
+                        break
+        if not transient_failures:
+            raise RuntimeError('Gemini generation returned HTTP 404 for every compatible catalog model')
+        raise RuntimeError(f'Gemini catalog model attempts failed. Last error: {last_error}') from None
 
 
 def gemini_batch(client, items):

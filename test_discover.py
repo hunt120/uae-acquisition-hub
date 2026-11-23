@@ -51,6 +51,16 @@ class GeminiTests(unittest.TestCase):
         body = json.loads(requests[3].data)
         self.assertNotIn('Publisher', body['contents'][0]['parts'][0]['text'])
 
+    def test_falls_back_when_generation_times_out(self):
+        with patch('discover.urllib.request.urlopen', side_effect=[
+            response({'models': [model('gemini-9-flash'), model('gemini-8-flash')]}),
+            TimeoutError('test-key'), response(generation([])),
+        ]) as request:
+            client = discover.Gemini()
+            self.assertEqual(discover.gemini_batch(client, []), [])
+        self.assertEqual(request.call_count, 3)
+        self.assertEqual(client.model, 'models/gemini-8-flash')
+
     def test_all_models_missing_is_fatal(self):
         missing = HTTPError('https://example.invalid', 404, 'test-key', {}, None)
         with patch('discover.urllib.request.urlopen', side_effect=[
