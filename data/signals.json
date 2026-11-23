@@ -1,8 +1,11 @@
 {
-  "updated_at": "2026-11-23T07:54:04.609839+00:00",
+  "updated_at": "2026-11-23T08:10:39.790028+00:00",
   "feed_successes": 20,
   "daily_target": 40,
-  "method": "Company-specific news extraction; employer, UAE presence and hiring require verification; no guaranteed lead count",
+  "method": "Gemini headline-only extraction, exact company-name evidence check; all leads unverified",
+  "ai_status": "unavailable",
+  "ai_batches": 0,
+  "ai_errors": 2,
   "signals": [
     {
       "id": "3c541071b377bd67e1",
@@ -188,71 +191,7 @@
       "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNekdlM0R2c29jeEItTlNlZG5jN2I2WklPZ0xpYjhBTWFyY2VFbXNtR3NQT1RSaEhyLTZLWGMzZkdCbE11dWxBbnNESGQwVkItLUhBdEhLcUFMQVVxdVgyS2pVYmtDRXRTQ2ViSWhud1ZzdUNIOVlfWklydm1xQ0FBb3Q2YkFqZlkydGVoZUJ4c0RJc0FuNnpSWldoR1p4bFBqQUJwcmZBbjdOT1JHNkhNTnVPRjBmZU9udFpRVnNpVmZrOUJ2YUd4ZFdrdTQyc05ZaXZYczJRaWprYTA?oc=5",
       "published": "2026-11-07T21:36:46+00:00",
       "type": "unverified_news_signal"
-    },
-    {
-      "id": "78bef2c45fc108bd1a",
-      "title": "ALEC FITOUT opens 7,500 sqm manufacturing facility in Ras Al Khaimah - Construction Week Online",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQRV82R3NOd08zTmU1WWtxQ041SUJBVERhb2pSQldlMWdSaGpzWFV0STdlampuT2VQS3hXNmlpU2hXU2wwRzNfOElQNFBHQ0lyYkN3YjNwbHZhS293NDdsNC05NmpCdi0wbUJGY2JBaUZqMmg0ZGpJS2lucllpeEhqTEVQdnprQzFDM1p3NHFYdXdETmU5RnJ3cWcxT3FJZ3NEalNmZDN1X1pRaS0yV0w0X21NZ2ViQ1c5UDUxczUxdEk?oc=5",
-      "published": "2026-11-02T08:00:00+00:00",
-      "type": "unverified_news_signal"
     }
   ],
-  "prospects": [
-    {
-      "id": "57792376eef4f32b",
-      "name": "Aster DM Healthcare",
-      "emirate": "UAE — emirate unverified",
-      "score": 90,
-      "confidence": "News headline candidate — verify UAE hiring and payroll relevance",
-      "evidence": [
-        {
-          "title": "UAE jobs: Aster DM Healthcare to hire up to 2,500 staff a year across region as it expands network - Khaleej Times",
-          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPM1gwNFVsT0hHMHpreUgyU0NJNkIzbGs1dTc1UkJIYjBUZmM5TmN1dFphZ3JYVWFuRmlKVXFzTVNUYTZ4dnpDdUdFNi1kbHV1R1hXdWhiWk1tM3VydnJMdllxTHlTaTRIazFZUVpsVXFGNDN1MEpEZU9UWDRvYllPWWdOSGFOMV96Zkxqa3J3Nl9vTXhsWXhfNWZrT3g1V0NMbldHZFZtR3FpREZYRTBCcDdFOVE1S05la01SOdIBxAFBVV95cUxPbkMyVjNhTTlkR05jRzljME5YZ1hxZlJhay1aTVYtRG5NRHpSaEg0SDJjTndSLTFtM3ZLd2xIZEI1VXAtTkpiOHdsYXVqNVJBaENSaDJxR1dqM09kN1lLWkVxM0drZ2p5RHhwU3dCb2xTcmVwX1F4enJvNlZFaXI0N293VTlnaHBVVzBIblp0YVBBN1pncGRzcFdVSG5fd1lxdF8teUQzbTNqYVEzT1FQQy1pbWVsSVF0RTJVa0hhOWlVUm50?oc=5",
-          "published": "2026-11-09T08:00:00+00:00"
-        }
-      ]
-    },
-    {
-      "id": "666c5dc6d038eb0d",
-      "name": "sign agreement",
-      "emirate": "Dubai",
-      "score": 65,
-      "confidence": "News headline candidate — verify UAE hiring and payroll relevance",
-      "evidence": [
-        {
-          "title": "DMW and DataFlow Group sign agreement to launch DREAM platform in Dubai - Zawya",
-          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNWFVHWEthLUJMLU1UcFBhdmd2Ylc1MDJsVUdaRnhUel9DMzd5VWNLQmxuM255bjk1MC1pU2hwb2F3OWVUbGVka1A0aDVZdnkxazBSNkhpQ1Q3b3k1Y29jWThhX1lWcEZ6THVkczBVRTdmbUU3Zk1qUGUzVHo5NXJFMG94b3o1QURULU9GN1Vhb2FEYlJlTnlCd2gzS3Jrd0x3V211czdjNFVVbU9vT21mSW8xZDB3ZVR3Undmc3FHOFlzQmdZbFNMVFR1Ung3dw?oc=5",
-          "published": "2026-11-16T14:08:00+00:00"
-        }
-      ]
-    },
-    {
-      "id": "44ecc2fe96ffdf81",
-      "name": "UAE employers",
-      "emirate": "UAE — emirate unverified",
-      "score": 65,
-      "confidence": "News headline candidate — verify UAE hiring and payroll relevance",
-      "evidence": [
-        {
-          "title": "UAE employers plan 2.8% pay rises in 2027, but hiring appetite cools - Khaleej Times",
-          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOSlB0a2FGSDhBelNtcktkQ05UZjBVcHdJWFNZVXkwMklac2hkTUpTWmVtaWNZNHNnZ1J5N01DMUhVeEhpV3YtN2ZZX2FtM0QzSmI1X1ZtZ3J4Sm9iVGl3b3ZmMHZFZXNxdG5xSF80MGtwZktseE9XMjFjWjZ4bkZLRVdTT3FxSE9qNGxMaHVmMW5hd1dqMEFmRFlBZjNtOGs1dE9QUGRB0gGuAUFVX3lxTE9UR2NEM0ctNHpnT1RBZTF0ZFBRM19oZDN3S3pYd3V1a1IxX2hQdmRKNS11SFV4NWUzbk0ydUdiZV9qYXZxcENYOFZHNDY1Z0RnN2VBbEpmc2dsaXUtWlBMNENocjBPWTBZTnBFUy03dWliTVRTblE4eXJiSTRsR29LRzc0Y0gzb1BqTFg3YVZ2bTJQTlBJcmV0S3o5enlaeWNHQ192RGdscWphVTMwdw?oc=5",
-          "published": "2026-11-16T06:16:30+00:00"
-        }
-      ]
-    },
-    {
-      "id": "16a380055d3373c4",
-      "name": "India-UAE corridor is",
-      "emirate": "UAE — emirate unverified",
-      "score": 60,
-      "confidence": "News headline candidate — verify UAE hiring and payroll relevance",
-      "evidence": [
-        {
-          "title": "India-UAE corridor is open. Crossing it is a cultural job, not copy paste - Adgully",
-          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQOXZPLTNtaUs2QjZUeU1XM2I4RjJZam5JQ1haT1IzUjZ2RXJ5ZzVsUjdiVm8xRk51VWVuOERsUHQ1ZjVRc0Q0X0lUbzhFcXBWVkhXUm5NamwxTHhCWDZoQWNBbDdnRnFqQktCdjY0SlcxNXdJTDBKdnVmNkxXd3ptRFlsaGlHakxJWW1tWXRXQVZOcEowc0pzVnZoeE5QSXQtT0UtNHZOTmRmdw?oc=5",
-          "published": "2026-11-12T03:31:20+00:00"
-        }
-      ]
-    }
-  ]
+  "prospects": []
 }
