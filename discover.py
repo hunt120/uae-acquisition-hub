@@ -1,6 +1,15 @@
 #!/usr/bin/env python3
 """Public RSS-based employer candidates. Conservative headline extraction; no fabricated data."""
-import hashlib, json, os, re, time, urllib.error, urllib.parse, urllib.request, xml.etree.ElementTree as ET
+import hashlib
+import json
+import os
+import re
+import tempfile
+import time
+import urllib.error
+import urllib.parse
+import urllib.request
+import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 from pathlib import Path
@@ -51,39 +60,6 @@ KNOWN_EMPLOYERS=[
  'Al Tayer Group','Al Ansari Exchange','Sobha Realty','Khidmah',
  'Serco','Al Shirawi','Mediclinic','Thumbay Group','Khalifa University',
 ]
-GENERIC_START=re.compile(r'^(?:UAE jobs?|Dubai jobs?|Abu Dhabi jobs?|Sharjah jobs?|Jobs in (?:the )?UAE|Hiring in (?:the )?UAE)\s*[:–—-]\s*',re.I)
-ACTION=r'(?:to\s+)?(?:hire|recruit|expand|open|launch|add|create|build|invest|unveil|announce|plan|seek|train|boost|grow|set\s+up)\b'
-NAME=r'([A-Z][A-Za-z0-9&.\'’\-]*(?:\s+(?:[A-Z][A-Za-z0-9&.\'’\-]*|DM|al|Al)){0,5})'
-PATTERNS=[
- re.compile(r'\b(?:UAE|Dubai|Abu Dhabi|Sharjah)\s+(?:company|firm|business|operator|retailer)\s+'+NAME+r'\s+'+ACTION,re.I),
- re.compile(r'^'+NAME+r'\s+'+ACTION,re.I),
- re.compile(r'\b(?:company|group|operator|retailer|developer|hospital|chain)\s+'+NAME+r'\s+'+ACTION,re.I),
-]
-GENERIC={'uae','dubai','abu dhabi','sharjah','ajman','fujairah','ras al khaimah',
- 'new','jobs','company','companies','government','ministry','united arab emirates',
- 'hundreds','thousands','major','local','global','leading','top','the','a','an',
- 'employer','operator','retailer','hiring','workers','staff','employees','healthcare'}
-BAD_WORDS={'to','will','plans','announces','new','hiring','recruitment','jobs','staff',
- 'employees','workers','as','for','with','and','in','across','under','at','from'}
-
-def employer_from_title(title):
-    headline=title.rsplit(' - ',1)[0].strip()
-    headline=GENERIC_START.sub('',headline)
-    # A known company must actually appear as a complete name in the headline.
-    for employer in sorted(KNOWN_EMPLOYERS,key=len,reverse=True):
-        if re.search(r'(?<![\w])'+re.escape(employer)+r'(?![\w])',headline,re.I):
-            return employer
-    for pattern in PATTERNS:
-        m=pattern.search(headline)
-        if not m:continue
-        name=re.sub(r'\s+to$','',m.group(1).strip(' .,:-'),flags=re.I)
-        words=name.lower().split()
-        if (len(name)<4 or name.lower() in GENERIC or
-            any(w in BAD_WORDS for w in words) or UAE.fullmatch(name)):
-            continue
-        return name
-    return None
-
 def read_existing():
     try:
         data=json.loads(OUT.read_text(encoding='utf-8'))
@@ -107,28 +83,151 @@ def score(title):
     if re.search(r'\bDubai\b',title,re.I):s+=5
     return min(s,95)
 
-# Gemini runs only in GitHub Actions, not in public browser JavaScript.
-MODEL=os.environ.get('GEMINI_MODEL','gemini-2.5-flash-lite')
-MAX_AI_ITEMS=120
-BATCH_SIZE=15
-MAX_BATCHES=8
-NAME_BAD=re.compile(r'^(?:uae employers?|dubai employers?|india.uae corridor|sign agreement|new hiring|companies|employers?|company|government|industry|sectors?|jobs?|hiring|the|this|these)\b',re.I)
-ACTION_STRONG=re.compile(r'\b(?:hire|hiring|recruit|recruitment|vacancies|jobs created|new jobs|expand|expansion|new (?:hospital|hotel|store|factory|warehouse|branch|facility)|open(?:s|ing)?|launch(?:es|ed)?)\b',re.I)
+GEMINI_ROOT = 'https://generativelanguage.googleapis.com/v1beta'
+MAX_AI_ITEMS = 120
+BATCH_SIZE = 15
+HIRING_ACTION = r'(?:hire[sd]?|hiring|recruit(?:s|ed|ing)?|seeks? to hire|creates? new jobs)'
+EXPANSION_ACTION = r'(?:expand(?:s|ed|ing)?|open(?:s|ed|ing)?|builds?|launch(?:es|ed|ing)?)'
+ACTION_STRONG = re.compile(rf'\b(?:{HIRING_ACTION}|{EXPANSION_ACTION})\b', re.I)
+SITE = re.compile(r'\b(?:branches|branch|factories|factory|warehouse|plant|hotel|store|facility|office|hospital|clinic|campus|operations)\b', re.I)
+LEADING = re.compile(r'^(?:(?:UAE|Dubai|Abu Dhabi|Sharjah) jobs:\s*|(?:UAE|Dubai|Abu Dhabi|Sharjah)[- ]based\s+)', re.I)
+LEGAL_SUFFIX = re.compile(r'\b(?:L\.?L\.?C\.?|FZE|FZCO|FZ-LLC|PJSC|P\.J\.S\.C\.|Ltd\.?|Limited|Inc\.?)$', re.I)
+NAME_WORDS = re.compile(r"^[\w&.'’ -]+$")
+FRAGMENT_WORDS = re.compile(
+    r'\b(?:job[s]?|vacancies|hiring|workers|staff|employees|employers?|signs?|agreement|'
+    r'announces?|plans?|reveals?|reports?|says?|for|with|across|under|from|at|in|to|will)\b',
+    re.I,
+)
+GENERIC_START = re.compile(
+    r'^(?:(?:a|an|the|new|leading|major|local|global|UAE|Dubai|Abu Dhabi|Sharjah)\s+)*'
+    r'(?:company|firm|business|group|employers?|operator|retailer|developer|chain)\b',
+    re.I,
+)
 
-def valid_company(name, title):
-    if not isinstance(name,str):return False
-    name=' '.join(name.split()).strip(' .,:;')
-    if not 3<=len(name)<=85 or len(name.split())>9 or NAME_BAD.search(name):return False
-    if name.lower() in GENERIC or any(w.lower() in BAD_WORDS for w in name.split()):return False
-    # AI must point to a name actually present in the headline. Do not trust inventions.
-    if not re.search(r'(?<![\w])'+re.escape(name)+r'(?![\w])',title,re.I):return False
-    return True
 
-def gemini_batch(items):
-    key=os.environ.get('GEMINI_API_KEY','').strip()
-    if not key:raise RuntimeError('GEMINI_API_KEY missing from Actions step environment')
+def headline_text(item):
+    title = item.get('headline')
+    # Older Google News records only stored the display title with a publisher suffix.
+    return title if title is not None else item['title'].rsplit(' - ', 1)[0]
+
+
+def valid_company(name, headline, event):
+    if not isinstance(name, str) or not NAME_WORDS.fullmatch(name):
+        return False
+    if not 3 <= len(name) <= 85 or len(name.split()) > 9:
+        return False
+
+    known = any(name.casefold() == employer.casefold() for employer in KNOWN_EMPLOYERS)
+    if not known:
+        # For unfamiliar names, require an explicit legal suffix and reject prose fragments.
+        if (not LEGAL_SUFFIX.search(name) or GENERIC_START.search(name)
+                or FRAGMENT_WORDS.search(name) or ACTION_STRONG.search(name)):
+            return False
+
+    action = {'hiring': HIRING_ACTION, 'expansion': EXPANSION_ACTION}.get(event)
+    if action is None:
+        return False
+    subject = LEADING.sub('', headline.strip(), count=1)
+    match = re.match(
+        rf"^{re.escape(name)}(?:['’]s)?\s+(?:(?:to|will|plans? to|is|begins?)\s+)?({action})\b",
+        subject,
+        re.I,
+    )
+    if not match:
+        return False
+
+    detail = subject[match.end():]
+    if event == 'hiring':
+        return not re.match(r'\s+(?:process|rules?|polic(?:y|ies)|freeze|platform|agreement)\b', detail, re.I)
+    return bool(SITE.search(detail)) and not re.match(
+        r'\s+(?:(?:an?|the|its|new)\s+)*(?:platform|app|campaign|partnership|agreement|program(?:me)?)\b',
+        detail, re.I,
+    )
+
+
+class GeminiHTTPError(RuntimeError):
+    def __init__(self, operation, status):
+        self.status = status
+        super().__init__(f'Gemini {operation} returned HTTP {status}')
+
+
+class Gemini:
+    def __init__(self):
+        self.key = os.environ.get('GEMINI_API_KEY', '').strip()
+        if not self.key:
+            raise RuntimeError('GEMINI_API_KEY missing from Actions step environment')
+        self.models = self.list_models()
+        self.model = self.models[0]
+
+    def request(self, path, operation, body=None):
+        payload = json.dumps(body).encode() if body is not None else None
+        request = urllib.request.Request(
+            f'{GEMINI_ROOT}/{path}', data=payload,
+            headers={'Content-Type': 'application/json', 'x-goog-api-key': self.key},
+        )
+        for attempt in range(3):
+            try:
+                with urllib.request.urlopen(request, timeout=45) as response:
+                    result = json.load(response)
+                if not isinstance(result, dict):
+                    raise RuntimeError(f'Gemini {operation} returned an invalid response')
+                return result
+            except urllib.error.HTTPError as exc:
+                if exc.code not in (408, 429, 500, 502, 503, 504) or attempt == 2:
+                    raise GeminiHTTPError(operation, exc.code) from None
+            except OSError:
+                if attempt == 2:
+                    raise RuntimeError(f'Gemini {operation} failed after network retries') from None
+            except ValueError:
+                raise RuntimeError(f'Gemini {operation} returned invalid JSON') from None
+            time.sleep(3 * 2**attempt)
+
+    def list_models(self):
+        names = set()
+        params = {'pageSize': 100}
+        seen_tokens = set()
+        while True:
+            result = self.request('models?' + urllib.parse.urlencode(params), 'model listing')
+            for model in result.get('models', []):
+                name = model.get('name', '')
+                if ('generateContent' in model.get('supportedGenerationMethods', [])
+                        and re.fullmatch(r'models/gemini-[a-z0-9.-]+', name)
+                        and not re.search(r'-(?:image|tts|audio|live|embedding|robotics|computer-use|vision|deep-research|agent)(?:-|$)', name)):
+                    names.add(name)
+            token = result.get('nextPageToken')
+            if not token:
+                break
+            if token in seen_tokens:
+                raise RuntimeError('Gemini model catalog repeated a page token')
+            seen_tokens.add(token)
+            params['pageToken'] = token
+        if not names:
+            raise RuntimeError('Gemini model catalog contains no supported text generation models')
+
+        def priority(name):
+            version = re.search(r'gemini-(\d+)(?:\.(\d+))?', name)
+            major, minor = (int(version[1]), int(version[2] or 0)) if version else (0, 0)
+            unstable = bool(re.search(r'-(?:preview|exp|experimental|latest)(?:-|$)', name))
+            return unstable, 'flash' not in name, -major, -minor, 'lite' not in name, name
+
+        return sorted(names, key=priority)
+
+    def generate(self, body):
+        while self.models:
+            self.model = self.models[0]
+            try:
+                return self.request(f'{self.model}:generateContent', 'generation', body)
+            except GeminiHTTPError as exc:
+                if exc.status != 404:
+                    raise
+                print(f'Gemini returned HTTP 404 for {self.model}; trying the next catalog model', flush=True)
+                self.models.pop(0)
+        raise RuntimeError('Gemini generation returned HTTP 404 for every compatible catalog model')
+
+
+def gemini_batch(client, items):
     # Return indices into the provided batch; no invented article references.
-    compact=[{'index':i,'headline':x['title']} for i,x in enumerate(items)]
+    compact=[{'index':i,'headline':headline_text(x)} for i,x in enumerate(items)]
     instructions=(
       'You extract named real-world employers from UAE business news headlines. '
       'Return only a JSON object with key "companies", array of objects with keys '
@@ -136,6 +235,8 @@ def gemini_batch(items):
       '"event" (one of hiring, expansion, other), "confidence" (high, medium, low). '
       'Do not extract headline fragments, industries, countries, publications, generic employers, '
       'government policy articles, or entities mentioned only as commentators. '
+      'Extract the employer only when it is the subject at the beginning of the headline. '
+      'Use its complete name, including any legal suffix printed in the headline. '
       'Only include an employer if the headline attributes hiring, new jobs, or a concrete '
       'new physical business site/expansion to that company. Training existing staff, '
       'partnerships without workforce expansion, salary forecasts and vague business news '
@@ -144,57 +245,48 @@ def gemini_batch(items):
     )
     body={'system_instruction':{'parts':[{'text':instructions}]},
       'contents':[{'role':'user','parts':[{'text':json.dumps(compact,ensure_ascii=False)}]}],
-      'generationConfig':{'temperature':0,'responseMimeType':'application/json','maxOutputTokens':1800}}
-    url='https://generativelanguage.googleapis.com/v1beta/models/'+urllib.parse.quote(MODEL,safe='')+':generateContent'
-    req=urllib.request.Request(url,data=json.dumps(body).encode(),headers={
-      'Content-Type':'application/json','x-goog-api-key':key},method='POST')
-    last=None
-    for attempt in range(3):
-        try:
-            with urllib.request.urlopen(req,timeout=45) as resp:result=json.load(resp)
-            parts=result.get('candidates',[{}])[0].get('content',{}).get('parts',[])
-            response_text=''.join(p.get('text','') for p in parts)
-            parsed=json.loads(response_text)
-            return parsed.get('companies',[]) if isinstance(parsed,dict) else []
-        except urllib.error.HTTPError as exc:
-            last=RuntimeError('Gemini HTTP '+str(exc.code))
-            if exc.code not in (429,500,502,503,504):break
-        except (OSError,ValueError,KeyError,IndexError) as exc:last=RuntimeError('Gemini response error: '+type(exc).__name__)
-        if attempt<2:time.sleep(2**attempt*3)
-    raise last or RuntimeError('Gemini request failed')
+      'generationConfig':{'responseMimeType':'application/json','maxOutputTokens':4096}}
+    result = client.generate(body)
+    try:
+        candidate = result['candidates'][0]
+        if candidate.get('finishReason') != 'STOP':
+            raise ValueError('incomplete generation')
+        parts = candidate['content']['parts']
+        response_text = ''.join(part.get('text', '') for part in parts if not part.get('thought'))
+        records = json.loads(response_text)['companies']
+        if not isinstance(records, list) or any(
+            not isinstance(record, dict)
+            or type(record.get('index')) is not int
+            or not 0 <= record['index'] < len(items)
+            or not isinstance(record.get('name'), str)
+            or record.get('event') not in ('hiring', 'expansion', 'other')
+            or record.get('confidence') not in ('high', 'medium', 'low')
+            for record in records
+        ):
+            raise ValueError('invalid companies array')
+        return records
+    except (KeyError, IndexError, ValueError, TypeError, AttributeError):
+        raise RuntimeError('Gemini extraction returned an incomplete or invalid companies response') from None
 
-def ai_extract(signals, previous, now):
-    # Preserve prior AI-vetted candidates if AI temporarily unavailable, only if their
-    # evidence still falls within the freshness window. Never preserve old regex guesses.
-    grouped={}
-    fresh_by_url={s['url']:s for s in signals}
-    for p in previous.get('prospects',[]):
-        if not isinstance(p,dict) or p.get('extraction_method')!='gemini':continue
-        evidence=[e for e in p.get('evidence',[]) if isinstance(e,dict) and e.get('url') in fresh_by_url]
-        if evidence and valid_company(p.get('name'),evidence[0]['title']):
-            q=dict(p);q['evidence']=evidence;grouped[re.sub(r'[^a-z0-9]','',q['name'].lower())]=q
-    batches=errors=0
-    # Prioritize articles with strong employer-specific signals, while allowing AI to
-    # reject general-news headlines. Deterministic ordering for reproducible results.
-    eligible=[s for s in signals if ACTION_STRONG.search(s['title'])]
-    eligible=eligible[:MAX_AI_ITEMS]
-    for pos in range(0,len(eligible),BATCH_SIZE):
-        if batches+errors>=MAX_BATCHES:break
-        chunk=eligible[pos:pos+BATCH_SIZE]
-        try:records=gemini_batch(chunk);batches+=1
+
+def ai_extract(signals):
+    grouped = {}
+    eligible = [item for item in signals if ACTION_STRONG.search(headline_text(item))]
+    eligible = eligible[:MAX_AI_ITEMS]
+    client = Gemini()
+    batches = 0
+    for pos in range(0, len(eligible), BATCH_SIZE):
+        chunk = eligible[pos:pos + BATCH_SIZE]
+        try:
+            records = gemini_batch(client, chunk)
         except RuntimeError as exc:
-            errors+=1;print('AI extraction unavailable:',str(exc))
-            if not os.environ.get('GEMINI_API_KEY'):break
-            continue
-        if not isinstance(records,list):continue
+            raise RuntimeError(f'AI batch {batches + 1} failed: {exc}') from None
+        batches += 1
         for rec in records:
-            if not isinstance(rec,dict):continue
-            idx=rec.get('index')
-            if type(idx) is not int or not 0<=idx<len(chunk):continue
-            item=chunk[idx];name=rec.get('name','')
-            if not valid_company(name,item['title']):continue
-            if rec.get('event') not in ('hiring','expansion'):continue
-            name=' '.join(name.split()).strip(' .,:;')
+            item = chunk[rec['index']]
+            name = ' '.join(rec['name'].split())
+            if rec['confidence'] == 'low' or not valid_company(name, headline_text(item), rec['event']):
+                continue
             key=re.sub(r'[^a-z0-9]','',name.lower())
             if not key:continue
             evidence={'title':item['title'],'url':item['url'],'published':item['published']}
@@ -209,7 +301,7 @@ def ai_extract(signals, previous, now):
                 old=grouped[key]
                 if all(e['url']!=item['url'] for e in old['evidence']) and len(old['evidence'])<5:old['evidence'].append(evidence)
                 old['score']=max(old['score'],points)
-    return sorted(grouped.values(),key=lambda p:(-p['score'],p['name'].lower()))[:150],batches,errors
+    return sorted(grouped.values(),key=lambda p:(-p['score'],p['name'].lower()))[:150], batches
 
 def main():
     now=datetime.now(timezone.utc)
@@ -217,7 +309,7 @@ def main():
     found={}
     # Re-qualify previous records, never reuse stale records indefinitely.
     for item in previous.get('signals',[]):
-        if isinstance(item,dict) and qualify(item.get('title','')) and item.get('url'):
+        if isinstance(item,dict) and isinstance(item.get('title'), str) and qualify(headline_text(item)) and item.get('url'):
             try:
                 if datetime.fromisoformat(item['published'].replace('Z','+00:00')) >= now-timedelta(days=21):found[item['id']]=item
             except (KeyError,TypeError,ValueError):pass
@@ -231,22 +323,40 @@ def main():
             for item in root.findall('.//channel/item')[:70]:
                 title=(item.findtext('title') or '').strip()
                 link=(item.findtext('link') or '').strip()
-                if not qualify(title) or not link.startswith('https://'):continue
+                publisher = (item.findtext('source') or '').strip()
+                suffix = ' - ' + publisher
+                headline = title[:-len(suffix)] if publisher and title.endswith(suffix) else title
+                if not qualify(headline) or not link.startswith('https://'):continue
                 try:published=parsedate_to_datetime(item.findtext('pubDate') or '').astimezone(timezone.utc)
                 except (ValueError,TypeError,OverflowError):continue
                 if published<now-timedelta(days=21):continue
                 uid=hashlib.sha256(link.encode()).hexdigest()[:18]
-                found[uid]={'id':uid,'title':title[:240],'url':link,'published':published.isoformat(),'type':'unverified_news_signal'}
+                found[uid]={'id':uid,'title':title[:240],'headline':headline[:240],'url':link,'published':published.isoformat(),'type':'unverified_news_signal'}
         except (OSError,ValueError,ET.ParseError) as exc:print('Feed unavailable:',type(exc).__name__,str(exc)[:100])
     if successes==0:raise SystemExit('No feeds accessible; existing data left unchanged')
     signals=sorted(found.values(),key=lambda x:x['published'],reverse=True)[:250]
-    prospects, ai_batches, ai_errors = ai_extract(signals, previous, now)
+    try:
+        prospects, ai_batches = ai_extract(signals)
+    except RuntimeError as exc:
+        raise SystemExit(f'Employer discovery failed: {exc}. Existing signals left unchanged.') from None
     payload={'updated_at':now.isoformat(),'feed_successes':successes,'daily_target':TARGET,
         'method':'Gemini headline-only extraction, exact company-name evidence check; all leads unverified',
-        'ai_status': 'ok' if ai_batches and not ai_errors else ('partial' if ai_batches else 'unavailable'),
-        'ai_batches':ai_batches,'ai_errors':ai_errors,
+        'ai_status':'ok' if ai_batches else 'no_eligible_signals',
+        'ai_batches':ai_batches,'ai_errors':0,
         'signals':signals,'prospects':prospects}
     OUT.parent.mkdir(parents=True,exist_ok=True)
-    OUT.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-    print(f'Saved {len(signals)} signals and {len(prospects)} AI-screened prospects; AI batches {ai_batches}, errors {ai_errors}')
-if __name__=='__main__':main()
+    # Publish only after every AI batch has finished and the whole JSON is on disk.
+    with tempfile.NamedTemporaryFile(mode='w', encoding='utf-8', dir=OUT.parent, delete=False) as output:
+        temporary = Path(output.name)
+        try:
+            json.dump(payload, output, ensure_ascii=False, indent=2)
+            output.write('\n')
+            output.close()
+            temporary.replace(OUT)
+        finally:
+            temporary.unlink(missing_ok=True)
+    print(f'Saved {len(signals)} signals and {len(prospects)} AI-screened prospects across {ai_batches} AI batches')
+
+
+if __name__ == '__main__':
+    main()
