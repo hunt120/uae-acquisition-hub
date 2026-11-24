@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-23T09:59:38.140754+00:00",
+  "updated_at": "2026-11-24T15:53:10.259443+00:00",
   "feed_successes": 21,
   "daily_target": 40,
   "method": "Gemini headline-only extraction, exact company-name evidence check; all leads unverified",
@@ -7,6 +7,62 @@
   "ai_batches": 2,
   "ai_errors": 0,
   "signals": [
+    {
+      "id": "914e112d77235581d3",
+      "title": "Dubai’s $35 Billion Al Maktoum Airport Expansion Advances with 100,000 Workers on Site - https://megaproject.com/",
+      "headline": "Dubai’s $35 Billion Al Maktoum Airport Expansion Advances with 100,000 Workers on Site",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPQnlyUHB5bWRQNG1EUVRibjYwR2REdU0yY0w3ZU5HMDVvcFcyXzRKendhVFJBanRmWFJIQ3YyYVdQWWlaV1VaSmxqV3FmSVh1Y0R4V3pHbzBTYU8yUk5ONGZwTEhrY0hqWVJoc1l2RGdxWjZfX2huOGxneS15MEVLZnB4WjlsOXpUcFU4alI5ZW1jelV2NDRqbDlvMTFHRkh1QnY3LXFHTXliZ0NsNUdoWTNtRkZkbHdUSVdmUw?oc=5",
+      "published": "2026-11-24T14:08:26+00:00",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "748cc6d0a564b25c2d",
+      "title": "Emirates Group Launches Major Crew and Pilot Recruitment - Wisevoter",
+      "headline": "Emirates Group Launches Major Crew and Pilot Recruitment",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNRm1QVjZ5TGtUcFRDU3JrQUlfaDBYSG4wQTRyRWdLdHk0ZDFjWnVGQWpZVXVhZHgyTGtycVVRRU1CUDl4aENxVzgxWjlKR2U1VUZaeThVU2Z3WWprTU5WdWVYZ2VIN0RGWEtyMFFnYVpDaURoZEY4YjBfbzFSbFQ1QzJVWjJQemF3dkE?oc=5",
+      "published": "2026-11-24T07:56:00+00:00",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "f0c248fc7d58d135f2",
+      "title": "Max Healthcare and Clemenceau Hospital Dubai partner to expand specialist care in UAE - Khaleej Times",
+      "headline": "Max Healthcare and Clemenceau Hospital Dubai partner to expand specialist care in UAE",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNcTZWVEwyODgyUUhXOV8ydmhkNkN6bVRiNmZGNXhJNzUwRzIzM01mOEtqbEtqcUw2WWRBRHk5SXp3XzlzNThZeUJsMkpINFpqZjc5OF92ZDNYeTh4NzMzMmNuTFljSnhjNExXbi1XV1V2TVFVN3FaVVlmMWpBVkVvMnIzbm52UlFDTkxHNWJZM1poT3ZaNEpDLXFfbXN3Rmg0WVBKVnJPdDIzUDJKQlg4My1FSUxuYWxJU3RWZXBDQ0VVRmfSAcsBQVVfeXFMTWtya0pzbnlubGVJNVlDMlBpa2Y2Y0RWYmFvV3I4NlRUa3I2Wm5KT3ZJZjZwOVE2Nmx3V0kyekgwWTFXSjF4WUNnUUNLQ010c0JEZFdZLVdYVDdKVFdGNlRuV1hWYUF4UXlSS1dQMk55OGNodGVxZDIxM3c2djZGZTVjSWk2eUZKdnBjZlBtWko5NjdYQ0lKZUM3TUhTdVh6TGx1Vk8wMktYSnJWaGtsLWh5WEdneW1rN3h0MDh0YmNjTHdqYTZ3RUthbHM?oc=5",
+      "published": "2026-11-24T07:26:24+00:00",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "2bc26befd024ef67b6",
+      "title": "Seers joins KOSDAQ 150 and expands in UAE as earnings falter - Chosunbiz",
+      "headline": "Seers joins KOSDAQ 150 and expands in UAE as earnings falter",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQVEVJUVhzczJDeF9uNUFSNHJYR1hUMDBqTU83bmJnUEc3a05iMERhS2RYZEZIR0ZvQ1Juci1vMzU0RXhoUC1iR3pIZ3J6clE0Ykt2YlZSeWtHTDhiOGJVQTNodHBDNXVkTXV6NkhadUxHUEZBN0JRb2syZDJGNHpLQ9IBlAFBVV95cUxOWXJJd3c1a3dmdjRIa24wZm5ZVnpNb0g4Tm5mXzlEa3JMWnpKTWVhQ09TSkhtcGlyT1dhOXJUWWVzc292MkV3eExIY3hmVmdkaVFSNXp4cVFEYTdxUVBta1lFbF9YMk9oRXg2NncxT01hN3UwRE45QXlTSVZYYll1OUVWX0NDU2VUTjVfS1V1dnZrYlRx?oc=5",
+      "published": "2026-11-23T21:00:00+00:00",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "989dd911a1c3a38682",
+      "title": "The Hoxton to open its first Abu Dhabi hotel and debut branded residences - Hotelier Middle East",
+      "headline": "The Hoxton to open its first Abu Dhabi hotel and debut branded residences",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNOUx6QXpzanFPYW9OLTU2UTZPTERlUVVQS2RFQWtoN0I4WHlRQlZKdmh2MmRha3dHWHdQWUloMlVub1RsNGpCOU1VZElpbGxWZk5yUzdzQlVveHctaWIwZmplOVJVU2F4NXZIWlVWM1lEMV92YmdOVW9yTTdDR1NfZ0NXMk9yMElZZnUyTGxaMjlJTG51VW5vZDR4aE9OVWlIekdtX1c0elZvWjF0TU4zMzBIcw?oc=5",
+      "published": "2026-11-23T13:20:41+00:00",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "8761f3121f6b6e2719",
+      "title": "Dubai’s work-from-park initiative to expand to other parks following successful pilot - Khaleej Times",
+      "headline": "Dubai’s work-from-park initiative to expand to other parks following successful pilot",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOczBTamxlMldPbEdReG8yQTNwU1ZwaWtjWnlDYVZhempzbmtIeVVIYUVVeHppOEJxcTIxTEFrMnhudHlJem5HS01ZdWp2bjA3clN1NUpXWUVRSG0zX2ZpdEx2ZWdOdDNYVldrc3Y0dGlsaUkwaFhkaXJVU0FmQTdaS0Q0NUhEVHBvYlpja0gtTWNZSXE1dDhuTXF1MkhsdWVNRGIxcnRyOERycHd0OGlOeFc4VHdiN2ZxWUR3eHVHdXTSAcABQVVfeXFMTnMwU2psZTJXT2xHUXhvMkEzcFNWcGlrY1p5Q2FWYXpqc25rSHlVSGFFVXh6aThCcXEyMUxBazJ4bnR5SXpuR0tNWXVqdm4wN3JTdTVKV1lFUUhtM19maXRMdmVnTnQzWFZXa3N2NHRpbGlJMGhYZGlyVVNBZkE3WktENDVIRFRwb2JaY2tILU1jWUlxNXQ4bk1xdTJIbHVlTURiMXJ0cjhEcnB3dDhpTnhXOFR3YjdmcVlEd3h1R3V0?oc=5",
+      "published": "2026-11-23T09:48:03+00:00",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "f7079a038289d9b904",
+      "title": "Expand North Star 2026 to bring global AI startups, investors to Dubai in December - Gulf Business",
+      "headline": "Expand North Star 2026 to bring global AI startups, investors to Dubai in December",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxON09PY2VTcjN4OFBzaGVzdWR6cUVxYVhPQXhDbmZOMUdoYXJlLXItRHZoUUktUnotUFJKU0hOQ2tsMlFzMmczYThFUGJpMTZRTXJNa1l3c3MwNXlrNF9JN2dZdTdPWWNPMWlOX0dtNVFLSFVid19BeG5nbks2MXV2X29aSVdHa1dwVW05cjU4N2dtYmxWNEZmaTRBcE5pRVoya3l0c2c1SGJzNE9DMl93NG5xa0R6U1BOaS1z?oc=5",
+      "published": "2026-11-22T19:32:48+00:00",
+      "type": "unverified_news_signal"
+    },
     {
       "id": "3c541071b377bd67e1",
       "title": "New hiring rules: Canada, Australia, Saudi Arabia and UAE update work policies - Tuko News",
@@ -16,16 +72,9 @@
       "type": "unverified_news_signal"
     },
     {
-      "id": "f7079a038289d9b904",
-      "title": "Expand North Star 2026 to bring global AI startups, investors to Dubai in December - Gulf Business",
-      "headline": "Expand North Star 2026 to bring global AI startups, investors to Dubai in December",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxON09PY2VTcjN4OFBzaGVzdWR6cUVxYVhPQXhDbmZOMUdoYXJlLXItRHZoUUktUnotUFJKU0hOQ2tsMlFzMmczYThFUGJpMTZRTXJNa1l3c3MwNXlrNF9JN2dZdTdPWWNPMWlOX0dtNVFLSFVid19BeG5nbks2MXV2X29aSVdHa1dwVW05cjU4N2dtYmxWNEZmaTRBcE5pRVoya3l0c2c1SGJzNE9DMl93NG5xa0R6U1BOaS1z?oc=5",
-      "published": "2026-11-20T07:02:39+00:00",
-      "type": "unverified_news_signal"
-    },
-    {
       "id": "16aac4e36935834fde",
       "title": "Expand North Star 2026 to bring global AI startups, investors to Dubai in December - Gulf Business",
+      "headline": "Expand North Star 2026 to bring global AI startups, investors to Dubai in December",
       "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOcnR4aXh0dmhNay04RGJFQkY1ZWgtVGhra2dhU20xamxRRlVUMkJ4ODlNbGVWUUNraWdrQ290QVRrcEs2aDZhcENkUkg0ZkxublNmUEVJSFA0dFRtaVMybEwyalRhYk5iRm51Z293ZEs0NlotOEFoalZoS2hrLXBubFZyLUJ0YUFTa2pZUjdGNmtyWnJ3OWw0aG9oYjRzaWdPQzhQNV9vTjJvMEVFUjFSa1pFck1pUWZZU18zWGRwQQ?oc=5",
       "published": "2026-11-20T07:02:02+00:00",
       "type": "unverified_news_signal"
@@ -62,6 +111,22 @@
       "type": "unverified_news_signal"
     },
     {
+      "id": "93d5af1c3a18c13725",
+      "title": "$35bn Al Maktoum Airport Expansion Mobilizes 100,000 Workers for Dubai’s Aviation Megaproject - Construction Review",
+      "headline": "$35bn Al Maktoum Airport Expansion Mobilizes 100,000 Workers for Dubai’s Aviation Megaproject",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPaXM1bWFoaUNNako1aWRoTmFta19GLVV6aWg5YVJGTFpKWkxzTzBGWlhacmFVekY5VUNiaE4tZm5ibmpNSGwtT001UW90eUI3UUJReVN3bTJVZFUtM2FVUE5EWlBQc3Z6eVFEcGxnWjhWcnc0bEp6bU5RRmdHOXRyVlVLdTZKVzJPYUNNN2dqeGFjXzRFdXJlMHhLMkUtSkExT3doOFROMVVYTnpXeWZOVFBXUDZpcDJlMzZRMVVrd3lUM1Z1WEVB?oc=5",
+      "published": "2026-11-18T08:45:03+00:00",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "570f278a0eb33a1d25",
+      "title": "DMW and DataFlow Collaborate to launch Dubai’s DREAM Platform - intlbm",
+      "headline": "DMW and DataFlow Collaborate to launch Dubai’s DREAM Platform",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNSUo5UFJUVURwMnd3MzYySEFtNkozX2gwNHliWDdHeXRld1VwSURFd3QzX2NvWkdWV2o5WXBmSTZCazFfX3U4MU5lMG42NVk5cU9XZS1LZXlTd0hTelJjamVvV0FoTFllVzdFT2pPbzNDOEVfX1ZPZHJ1d2NobzZwMlFPOWhydnF2RW1JUFh5QndDSUZhMmc?oc=5",
+      "published": "2026-11-17T07:41:59+00:00",
+      "type": "unverified_news_signal"
+    },
+    {
       "id": "b461322bc52ce2a7a4",
       "title": "UAE jobs: LinkedIn reveals 10 fastest-growing occupations as hiring rises across 15 industries - Arabian Business",
       "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQTGthMjMtUUg2OTZrZzlLZDY4LVFWMnNoTC1HbUg4N1lMZGt0cXNfVjAxYW1kV3g3amNOT0hWRnNZRU1HN05EdGs5TUtvbG5GYnJJNnNBUWo1eldZVzJncnVrd1dzdGZQblFWa1lvbXVCcDV0SXdEalNCdmU4V1c3LU1zd0IwdS1wdUtWdC1DX0Zvb0dHc3ROeg?oc=5",
@@ -86,19 +151,11 @@
       "type": "unverified_news_signal"
     },
     {
-      "id": "e357041557095aeaf6",
-      "title": "Dubai Taxi Company to train 400 employees in AI under new DIFC partnership - Gulf Business",
-      "headline": "Dubai Taxi Company to train 400 employees in AI under new DIFC partnership",
-      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPck9KSmZCcmtMWjlyLVV4SC1aUzBPNHIxU3ZWUTJtRHUxdDFlUGZSVUx3aFNrRmtUUHNPbzR1N3RyRXpIak5tNjdrVzgyUjZRdDR0dGxQcGNoN2lvNGFhNkw4aER0Uzh0M1NNRnd0cnNGeUkxdHlnUm1wSEhSVy1WbmhVdzVGcmktRXlNUVA1QXNsVXB2Nmp5cnFMUXBLZHlvQ3E3cXBJMEVKQmdZZUZsRG9UeW1PVkVDazdQT0g2bGtjaDBPMC12ZzJDSlU?oc=5",
-      "published": "2026-11-16T07:48:53+00:00",
-      "type": "unverified_news_signal"
-    },
-    {
       "id": "2c254da0b2bfe2c89b",
       "title": "UAE employers plan 2.8% pay rises in 2027, but hiring appetite cools - Khaleej Times",
       "headline": "UAE employers plan 2.8% pay rises in 2027, but hiring appetite cools",
       "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOSlB0a2FGSDhBelNtcktkQ05UZjBVcHdJWFNZVXkwMklac2hkTUpTWmVtaWNZNHNnZ1J5N01DMUhVeEhpV3YtN2ZZX2FtM0QzSmI1X1ZtZ3J4Sm9iVGl3b3ZmMHZFZXNxdG5xSF80MGtwZktseE9XMjFjWjZ4bkZLRVdTT3FxSE9qNGxMaHVmMW5hd1dqMEFmRFlBZjNtOGs1dE9QUGRB0gGuAUFVX3lxTE9UR2NEM0ctNHpnT1RBZTF0ZFBRM19oZDN3S3pYd3V1a1IxX2hQdmRKNS11SFV4NWUzbk0ydUdiZV9qYXZxcENYOFZHNDY1Z0RnN2VBbEpmc2dsaXUtWlBMNENocjBPWTBZTnBFUy03dWliTVRTblE4eXJiSTRsR29LRzc0Y0gzb1BqTFg3YVZ2bTJQTlBJcmV0S3o5enlaeWNHQ192RGdscWphVTMwdw?oc=5",
-      "published": "2026-11-16T06:16:30+00:00",
+      "published": "2026-11-16T08:00:00+00:00",
       "type": "unverified_news_signal"
     },
     {
@@ -106,7 +163,15 @@
       "title": "UAE salaries forecast to rise 2.8% in 2027 as hiring outlook improves - ARN News Centre",
       "headline": "UAE salaries forecast to rise 2.8% in 2027 as hiring outlook improves",
       "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQbWxSam1Ec3I3TnE3ajB3SDFCMm56elpZVHBIM09QeXByR3ZXQXZKaU5BVU1WTXZFRC14Z2JwbVZHS2pzWVFiUmxUV0Z0R1NwZnppZmFQc1BPTlR1NjJLRGJyR1VWTHpkNExqNXFfQnE5VFBxYnNVVXZLRmV1dW9mbVEtWTI4YU5lOFdQMjQtUm0wREFWVFFTYW43QTBhUFdCbGVZdDRoUUR6WXpxSm1IWlBB?oc=5",
-      "published": "2026-11-16T05:54:14+00:00",
+      "published": "2026-11-16T08:00:00+00:00",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "e357041557095aeaf6",
+      "title": "Dubai Taxi Company to train 400 employees in AI under new DIFC partnership - Gulf Business",
+      "headline": "Dubai Taxi Company to train 400 employees in AI under new DIFC partnership",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPck9KSmZCcmtMWjlyLVV4SC1aUzBPNHIxU3ZWUTJtRHUxdDFlUGZSVUx3aFNrRmtUUHNPbzR1N3RyRXpIak5tNjdrVzgyUjZRdDR0dGxQcGNoN2lvNGFhNkw4aER0Uzh0M1NNRnd0cnNGeUkxdHlnUm1wSEhSVy1WbmhVdzVGcmktRXlNUVA1QXNsVXB2Nmp5cnFMUXBLZHlvQ3E3cXBJMEVKQmdZZUZsRG9UeW1PVkVDazdQT0g2bGtjaDBPMC12ZzJDSlU?oc=5",
+      "published": "2026-11-16T07:48:53+00:00",
       "type": "unverified_news_signal"
     },
     {
@@ -202,6 +267,14 @@
       "title": "UAE jobs: Aster DM Healthcare to hire up to 2,500 staff a year across region as it expands network - Khaleej Times",
       "headline": "UAE jobs: Aster DM Healthcare to hire up to 2,500 staff a year across region as it expands network",
       "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPM1gwNFVsT0hHMHpreUgyU0NJNkIzbGs1dTc1UkJIYjBUZmM5TmN1dFphZ3JYVWFuRmlKVXFzTVNUYTZ4dnpDdUdFNi1kbHV1R1hXdWhiWk1tM3VydnJMdllxTHlTaTRIazFZUVpsVXFGNDN1MEpEZU9UWDRvYllPWWdOSGFOMV96Zkxqa3J3Nl9vTXhsWXhfNWZrT3g1V0NMbldHZFZtR3FpREZYRTBCcDdFOVE1S05la01SOdIBxAFBVV95cUxPbkMyVjNhTTlkR05jRzljME5YZ1hxZlJhay1aTVYtRG5NRHpSaEg0SDJjTndSLTFtM3ZLd2xIZEI1VXAtTkpiOHdsYXVqNVJBaENSaDJxR1dqM09kN1lLWkVxM0drZ2p5RHhwU3dCb2xTcmVwX1F4enJvNlZFaXI0N293VTlnaHBVVzBIblp0YVBBN1pncGRzcFdVSG5fd1lxdF8teUQzbTNqYVEzT1FQQy1pbWVsSVF0RTJVa0hhOWlVUm50?oc=5",
+      "published": "2026-11-09T08:00:00+00:00",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "d68c1bb6f7f1d36a15",
+      "title": "DMW launches pilot digital accreditation system for UAE employers - Daily Tribune",
+      "headline": "DMW launches pilot digital accreditation system for UAE employers",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOdGRYSHF1UjRETkt1Z0tGRUI0Q0JFZTVQSWRyOXlEZUExSzBubm5ZQ2EyZ0o4YVR3UkxteVZJWXJ1SExuN01fNWVjd1ZTdHZHbkRKNXpCUW11VzVvMHdST2wyU1RZUmlETHRna0hyUFRjU1FjSjZGUlNmbGRxRWN3ZlJQeldraGUyTnBVN3FBX0liRS1md01nMDlNWk5kS3hs?oc=5",
       "published": "2026-11-09T08:00:00+00:00",
       "type": "unverified_news_signal"
     },
