@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-24T15:53:10.259443+00:00",
+  "updated_at": "2026-11-25T15:35:30.873551+00:00",
   "feed_successes": 21,
   "daily_target": 40,
   "method": "Gemini headline-only extraction, exact company-name evidence check; all leads unverified",
@@ -8,11 +8,43 @@
   "ai_errors": 0,
   "signals": [
     {
+      "id": "5c548bf7f5727886f1",
+      "title": "UAE construction sector faces evolving hiring and retention challenges in 2027 - Construction Week Online",
+      "headline": "UAE construction sector faces evolving hiring and retention challenges in 2027",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOWXQ2aVJ4SktpWEhCZ1NaRDVhYV84eG9DZHZ0UzVULU9FODhfUkFuX1A4X1lOUk45MllMMlc4cGJ1UW9DVm8wWU9hSklUX0doSGp5cGtabFZDcFRpVmQtSWFXc0FkM0c5ckF1T0JaenFTel85MzBpdHdBVDBpT1hTMkF1ZVJQVTFCY1ZlOF8xSkFOSF9HQVA3bndmaDBKempsVmFFODhuYlZpNEplZ05JcktQT3BVWnR4RkgteW5fNmlwaGQy?oc=5",
+      "published": "2026-11-25T12:05:00+00:00",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "8ad297822be480ea53",
+      "title": "Dubai-Based PrettyJobs Combines Video Resumes and AI to Rethink Recruitment While Keeping Humans in Charge - برق الإمارات",
+      "headline": "Dubai-Based PrettyJobs Combines Video Resumes and AI to Rethink Recruitment While Keeping Humans in Charge",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNU2I5WGJRQzRubEJFMDFic3R4ZVB1TFltNDZkcHpMQ0VjRlJZbmgza01lZ0pNaEgxanJRMm04QUpmZDZ5a0lGcWJSWktuOHJRUUZ0RmxmdUY0cVBzVmFkM082NmhwNm9JWWZUOUJXaEt4NWQwcHh0MFdHR2pDaXFUZndGTEUtOEJGSTdsWkF3M3g0M2hZR05qVlJibjdFWHNKNDhLWlJ5dkp6ZGhseWNNQnltZC1Xb3VlSTN2a29qSnkyZzNBLWNoYm1ZTXJTWlpvQ2dXYkxxWmQwZ2pu?oc=5",
+      "published": "2026-11-25T08:18:39+00:00",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "58b7ec674e84f9071d",
+      "title": "7 out of 10 UAE employees seek new jobs as only 4 out of 10 firms plan pay rises in 2027 - Khaleej Times",
+      "headline": "7 out of 10 UAE employees seek new jobs as only 4 out of 10 firms plan pay rises in 2027",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQTHlIZHNrcUNxa3JSYTFpOEotTE5YTHp6NkFfakw4eVpHbkJ1ZTRFLURxQ19SN1Q4MXJxRE53b3lzTFhybHlrUlBQSVVwMENCdHlJZm4tZFp1WFBaM3JEcDlCLWlDY3lqeTZuekgzbFE3WVA1RWp2cjN0R213dDJNV0N6M2tzMnpINkw1aE9LRmVRekctYi1JS21kQldLNXBJNkcxMmpOZDBNZzNDSld2dUxSNFpMUDZOUDVCTzlncklUek5J0gHMAUFVX3lxTE85RHpMM1pwYklLeHp6TEVsbWRNdDF3bF9vbEtPdjlScWxoeHV0LURGbS03ZmJHckVLcGdJaVpnbjUybURySU1DcHRzbjlzV3RaUVljRXYxMG4zd09wekJqb2lIQUZGVTRIcFE3NTE5eDJQaG9tbDdLSHFITUEwZGx4eWJZLWZQQXhVQ1F4WV9Gb2JHZU5SRERZcU5hS2tmNEN4eE1HS2FTY0M3aW5ra0ZLZWYzWkNDaVhjT1pUX3p4VDAwNFViYVBxWGxjdQ?oc=5",
+      "published": "2026-11-25T07:10:25+00:00",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "65afdf6b0a42f487fc",
+      "title": "UAE Announces Multiple Job Vacancies in Different Fields - Bloom Pakistan",
+      "headline": "UAE Announces Multiple Job Vacancies in Different Fields",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPWFpHX25DZEJiaWtkSEdjN0lMOVg5aktwY242enBnVkpZQTU2Q3YtcTk0OXQzaFh6ZHVWa1lKekJkSXMwc1NkY05vMzhyVjhMWW5RQXgzeHY1bEkwV3UxTm5DTlRkUV90NHVGYW1waFB6LW9YckY3bnhubWtCbFVGbHBFWUNFRjRXZTNv?oc=5",
+      "published": "2026-11-24T18:38:13+00:00",
+      "type": "unverified_news_signal"
+    },
+    {
       "id": "914e112d77235581d3",
       "title": "Dubai’s $35 Billion Al Maktoum Airport Expansion Advances with 100,000 Workers on Site - https://megaproject.com/",
       "headline": "Dubai’s $35 Billion Al Maktoum Airport Expansion Advances with 100,000 Workers on Site",
       "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPQnlyUHB5bWRQNG1EUVRibjYwR2REdU0yY0w3ZU5HMDVvcFcyXzRKendhVFJBanRmWFJIQ3YyYVdQWWlaV1VaSmxqV3FmSVh1Y0R4V3pHbzBTYU8yUk5ONGZwTEhrY0hqWVJoc1l2RGdxWjZfX2huOGxneS15MEVLZnB4WjlsOXpUcFU4alI5ZW1jelV2NDRqbDlvMTFHRkh1QnY3LXFHTXliZ0NsNUdoWTNtRkZkbHdUSVdmUw?oc=5",
-      "published": "2026-11-24T14:08:26+00:00",
+      "published": "2026-11-24T14:22:43+00:00",
       "type": "unverified_news_signal"
     },
     {
@@ -45,6 +77,14 @@
       "headline": "The Hoxton to open its first Abu Dhabi hotel and debut branded residences",
       "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNOUx6QXpzanFPYW9OLTU2UTZPTERlUVVQS2RFQWtoN0I4WHlRQlZKdmh2MmRha3dHWHdQWUloMlVub1RsNGpCOU1VZElpbGxWZk5yUzdzQlVveHctaWIwZmplOVJVU2F4NXZIWlVWM1lEMV92YmdOVW9yTTdDR1NfZ0NXMk9yMElZZnUyTGxaMjlJTG51VW5vZDR4aE9OVWlIekdtX1c0elZvWjF0TU4zMzBIcw?oc=5",
       "published": "2026-11-23T13:20:41+00:00",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "c694ba7930627a595a",
+      "title": "VP Yadav urges UAE to expand skilled jobs, flights; Amb Al Shamsi reaffirms support - radionepalonline.com",
+      "headline": "VP Yadav urges UAE to expand skilled jobs, flights; Amb Al Shamsi reaffirms support",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBMcG8wMU13Zld2SWVjTTA4WnpOdG9NMWV1UkFEQTlLVlJFTlA2NE9weWVsYmNKZEswYVlrMDNwNmExWm1tLXFhdnpLaHZpVzVfUzcyQ2YzU3lXU1dPVFFkTnp6SWY?oc=5",
+      "published": "2026-11-23T11:43:51+00:00",
       "type": "unverified_news_signal"
     },
     {
@@ -147,7 +187,7 @@
       "title": "Cheaper workforce housing can cost Dubai workers up to three hours a day, says ServHub CEO - Gulf Business",
       "headline": "Cheaper workforce housing can cost Dubai workers up to three hours a day, says ServHub CEO",
       "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPcVNMcThjdmJpSEx5NzJKUkdHLTNxU3ZJUzRXazlYYV8zZkVGbUhKcmhXNWVCREJwdE5qU1lodTVUTWNmMXplUmQyZ3ZsWkctNE9IQUdnM0NJZ3RCb2hfTm5EUlNzRG8xSlEyUVFEMzNxS0VYNExWeWotV1NEbDRHMVY4VXZnUUNtbTJYOU90amppWWpoQ216aEJFZ3BVaE9nREhUZFVOZHNOa2JDRVdGYXUya3hUUDFXZVJGTm1La01FeDEweW5LXzQ5WTB2RUU?oc=5",
-      "published": "2026-11-16T09:13:23+00:00",
+      "published": "2026-11-16T08:00:00+00:00",
       "type": "unverified_news_signal"
     },
     {
@@ -251,7 +291,7 @@
       "title": "India-UAE corridor is open. Crossing it is a cultural job, not copy paste - Adgully",
       "headline": "India-UAE corridor is open. Crossing it is a cultural job, not copy paste",
       "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQOXZPLTNtaUs2QjZUeU1XM2I4RjJZam5JQ1haT1IzUjZ2RXJ5ZzVsUjdiVm8xRk51VWVuOERsUHQ1ZjVRc0Q0X0lUbzhFcXBWVkhXUm5NamwxTHhCWDZoQWNBbDdnRnFqQktCdjY0SlcxNXdJTDBKdnVmNkxXd3ptRFlsaGlHakxJWW1tWXRXQVZOcEowc0pzVnZoeE5QSXQtT0UtNHZOTmRmdw?oc=5",
-      "published": "2026-11-12T03:31:20+00:00",
+      "published": "2026-11-12T08:00:00+00:00",
       "type": "unverified_news_signal"
     },
     {
