@@ -1,12 +1,28 @@
 {
-  "updated_at": "2026-11-25T15:35:30.873551+00:00",
-  "feed_successes": 21,
+  "updated_at": "2026-11-26T15:12:57.784875+00:00",
+  "feed_successes": 20,
   "daily_target": 40,
   "method": "Gemini headline-only extraction, exact company-name evidence check; all leads unverified",
   "ai_status": "ok",
   "ai_batches": 2,
   "ai_errors": 0,
   "signals": [
+    {
+      "id": "07b88f99a989d3f9b6",
+      "title": "Ansar-VDP opens new horizons in skilled manpower export to Dubai - https://dailyasianage.com/",
+      "headline": "Ansar-VDP opens new horizons in skilled manpower export to Dubai",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQZDFlZjVjdWVMNjVrSVhIMHJNVS16Vkp6c1Q2T3JRaVNIcC1wWTV0UEg3YUFGWGl1UHFxUE5jeDFNNFdhRWF2TUdXLThoeFdfbmVNa0Ntb0EtMndVbDZaaDhRXzdCN244TnI5Y0FUc3A5MWlBMUNyUmFNcTloSHhIZFNkTHd2T3dMUnR4NWVpLXpyX1FKUGVlTWJuYTlEM053ckR5Mw?oc=5",
+      "published": "2026-11-25T22:57:25+00:00",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "d4b7ecd3dccda7745a",
+      "title": "Ansar-VDP opens new horizon in overseas employment, DG launches recruitment for Dubai - The Country Today",
+      "headline": "Ansar-VDP opens new horizon in overseas employment, DG launches recruitment for Dubai",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxONUdIYThldm9GVXhzdDBNZG1NSG9WaGZZV2NoWm9pZlhrdmM0eWRmRzhCRmhia0poQnVxa2dNZHRSZU1qSDZGSFlEVHRfMTNubUprZmtQZGlvUVkwUDNvRGVoSHFrdl9URElUb0FLRmJaSDQ0Q1lrMnhETW1FZ0MwZThFVlF6MDhXNEREZ3lUQjRxRGU2NjNYcjVIbkEtV1hETlBQX05BQmlCZk5PbGFaRzF3U1IzZ0VubHdoTzc0YWw?oc=5",
+      "published": "2026-11-25T14:59:41+00:00",
+      "type": "unverified_news_signal"
+    },
     {
       "id": "5c548bf7f5727886f1",
       "title": "UAE construction sector faces evolving hiring and retention challenges in 2027 - Construction Week Online",
@@ -151,11 +167,19 @@
       "type": "unverified_news_signal"
     },
     {
+      "id": "2761127315efc31a4f",
+      "title": "Sokin expands in the UAE with DFSA license, local AED payment rails and accounts - Macau Business",
+      "headline": "Sokin expands in the UAE with DFSA license, local AED payment rails and accounts",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNRFAxMllFa2o4Q004OXQ1ZmtwZFIxNHdwUXZiWk1VdzB5Ukg5bkZ1V1g5VFBkLW1xTWZjZjZsWWZ1cmtMdnlKcm4wdm5yMy0xWm5OdmJTalMzWDl4SE9CRlNuSWZFTmVTR1dOTWx3RWZaMjZUSGRVUi0wTWNldTV4R01qcjNqUzdEV0NKczVRcHhoNDgxdGJJT21tLVBwSXpGdEVaX1NlNHV5Zw?oc=5",
+      "published": "2026-11-18T13:30:38+00:00",
+      "type": "unverified_news_signal"
+    },
+    {
       "id": "93d5af1c3a18c13725",
       "title": "$35bn Al Maktoum Airport Expansion Mobilizes 100,000 Workers for Dubai’s Aviation Megaproject - Construction Review",
       "headline": "$35bn Al Maktoum Airport Expansion Mobilizes 100,000 Workers for Dubai’s Aviation Megaproject",
       "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPaXM1bWFoaUNNako1aWRoTmFta19GLVV6aWg5YVJGTFpKWkxzTzBGWlhacmFVekY5VUNiaE4tZm5ibmpNSGwtT001UW90eUI3UUJReVN3bTJVZFUtM2FVUE5EWlBQc3Z6eVFEcGxnWjhWcnc0bEp6bU5RRmdHOXRyVlVLdTZKVzJPYUNNN2dqeGFjXzRFdXJlMHhLMkUtSkExT3doOFROMVVYTnpXeWZOVFBXUDZpcDJlMzZRMVVrd3lUM1Z1WEVB?oc=5",
-      "published": "2026-11-18T08:45:03+00:00",
+      "published": "2026-11-18T10:47:35+00:00",
       "type": "unverified_news_signal"
     },
     {
