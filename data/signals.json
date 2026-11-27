@@ -1,12 +1,20 @@
 {
-  "updated_at": "2026-11-26T15:12:57.784875+00:00",
-  "feed_successes": 20,
+  "updated_at": "2026-11-27T15:03:51.075642+00:00",
+  "feed_successes": 21,
   "daily_target": 40,
   "method": "Gemini headline-only extraction, exact company-name evidence check; all leads unverified",
   "ai_status": "ok",
-  "ai_batches": 2,
+  "ai_batches": 3,
   "ai_errors": 0,
   "signals": [
+    {
+      "id": "88b3817a1b8a481041",
+      "title": "UAE: Wynn Al Marjan Island draws 280,000 job applicants as September 2027 opening nears - Gulf News",
+      "headline": "UAE: Wynn Al Marjan Island draws 280,000 job applicants as September 2027 opening nears",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQZkQ2MlptNjRldTFrVDkyTUJleTJISkJXSlQ0OVJONjNrd0tMZEhWeFpLckdVNk52UkJoSHJIZzRiVGU1VFhfTnk1ZkJiRDB4TlFGbU5tTGFBTlRWWW1BZ3RET24zNHJEVjVXMkduQUQ0eVBhN3g0djYzMEFlSTJpUzlTRXFMUkViY2JxUjFZV19uRHFJZmFxR0xWdkN1Mm9mOWU1dWxwQm9fMXh6WG1QU195UWR6UGJoVG1MZkRkMEJhMkw3X0Rkanozdk9ncVRZ0gHjAUFVX3lxTFBXMWoxYllLLXc5bElmaWVBdzNtd3kxZjVCSFd2UkhEOWJTMnFVY25VQmJPSzNpbEtsdDU0bHNJMnl0R2lyLV9PWm5nSVU5WEtVb1lDRlNwNE5McVVpV0h6TWNaUkM0bkxfYlA0OXFMa3Utb1pVZzZFU1IxMDc3NmRfeWdOSWtJNVdhOVo3YWs2SExNUUVRV0ZuSGtCYXFXdDlkZW9KdnEtMVZ6TjJwWkRXazdCOUVpRGFtTFVmN0l2WUJjRDJnZjN0NGprUFR3akZpUHdvMDRpejNaMEhvQWt1TWs4?oc=5",
+      "published": "2026-11-27T05:53:38+00:00",
+      "type": "unverified_news_signal"
+    },
     {
       "id": "07b88f99a989d3f9b6",
       "title": "Ansar-VDP opens new horizons in skilled manpower export to Dubai - https://dailyasianage.com/",
@@ -29,6 +37,14 @@
       "headline": "UAE construction sector faces evolving hiring and retention challenges in 2027",
       "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOWXQ2aVJ4SktpWEhCZ1NaRDVhYV84eG9DZHZ0UzVULU9FODhfUkFuX1A4X1lOUk45MllMMlc4cGJ1UW9DVm8wWU9hSklUX0doSGp5cGtabFZDcFRpVmQtSWFXc0FkM0c5ckF1T0JaenFTel85MzBpdHdBVDBpT1hTMkF1ZVJQVTFCY1ZlOF8xSkFOSF9HQVA3bndmaDBKempsVmFFODhuYlZpNEplZ05JcktQT3BVWnR4RkgteW5fNmlwaGQy?oc=5",
       "published": "2026-11-25T12:05:00+00:00",
+      "type": "unverified_news_signal"
+    },
+    {
+      "id": "57a0aa909ed4ed877b",
+      "title": "Dubai’s Sooner Raises $20M To Expand Homebuyer Financing Platform - Forbes Middle East",
+      "headline": "Dubai’s Sooner Raises $20M To Expand Homebuyer Financing Platform",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQaTBSbjRaMHJiVENBRDJicGhjaXVFcEhyYXYwdkcxYWdmbkYwLWt5N2M3Q2wxYTBVVnF5MVQzRHZ4Smk1SVhkWFItRnNLeTlkaWtOUDFEN0Jnb0taeUNodWVCNWxDMjRuRzFiVmFXS2ZadjhYdER6OTFkSjRiWHdHVHZFRVhqNHJVZDh0Q1hacU9QQ1o2RV9rUk5fWGMwU3Q5bF81STNwY0JOeFowa0JhLW1TYk9BSXFRbW9hMzZ3?oc=5",
+      "published": "2026-11-25T10:26:58+00:00",
       "type": "unverified_news_signal"
     },
     {
@@ -283,7 +299,7 @@
       "title": "Sokin bets big on Dubai with 100-hire expansion and new office as payment services take off - Arabian Business",
       "headline": "Sokin bets big on Dubai with 100-hire expansion and new office as payment services take off",
       "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQemlCc1FYQVlhQWxacC1XM1pxSlA2MTI0WkMtMUFSdURTRGp4WjhZYmJyNE9OOHZqdHVfdFY5V0phOWVIRDZwRjh1RTRQYjBiY05fbVJfLWZvMW5NUVo0a2pZenN1RjFsb0hkN0hkZG4yakdoME1oX3R4MzZPQUg1bC00WDJOMmNPSU82c2dWZFVjQ1p0LUIyNWlocExjTDAzN3ZveElTdzB1Z2NrNHE2N1R1RWZUdDBGUWpTbFJMN0VjQTItdEV6YjViRWZnRW9DeGJQM0dn?oc=5",
-      "published": "2026-11-13T07:32:24+00:00",
+      "published": "2026-11-13T08:00:00+00:00",
       "type": "unverified_news_signal"
     },
     {
