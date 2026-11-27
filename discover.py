@@ -219,7 +219,10 @@ class Gemini:
 
         return sorted(names, key=priority)
 
-    def generate(self, body):
+    def generate(self, body, *, try_other_on_rate_limit=False):
+        fallback_statuses = {404, 500, 502, 503, 504}
+        if try_other_on_rate_limit:
+            fallback_statuses.add(429)
         transient_failures = 0
         last_error = None
         while self.models:
@@ -228,7 +231,7 @@ class Gemini:
             try:
                 return self.request(f'{self.model}:generateContent', 'generation', body)
             except (GeminiHTTPError, GeminiNetworkError) as exc:
-                if isinstance(exc, GeminiHTTPError) and exc.status not in (404, 500, 502, 503, 504):
+                if isinstance(exc, GeminiHTTPError) and exc.status not in fallback_statuses:
                     raise
                 last_error = exc
                 self.models.pop(0)
@@ -320,6 +323,20 @@ def ai_extract(signals):
                 old['score']=max(old['score'],points)
     return sorted(grouped.values(),key=lambda p:(-p['score'],p['name'].lower()))[:150], batches
 
+def write_json(path, payload):
+    path.parent.mkdir(parents=True,exist_ok=True)
+    # Publish only after every AI batch has finished and the whole JSON is on disk.
+    with tempfile.NamedTemporaryFile(mode='w', encoding='utf-8', dir=path.parent, delete=False) as output:
+        temporary = Path(output.name)
+        try:
+            json.dump(payload, output, ensure_ascii=False, indent=2)
+            output.write('\n')
+            output.close()
+            temporary.replace(path)
+        finally:
+            temporary.unlink(missing_ok=True)
+
+
 def main():
     now=datetime.now(timezone.utc)
     previous=read_existing()
@@ -361,17 +378,7 @@ def main():
         'ai_status':'ok' if ai_batches else 'no_eligible_signals',
         'ai_batches':ai_batches,'ai_errors':0,
         'signals':signals,'prospects':prospects}
-    OUT.parent.mkdir(parents=True,exist_ok=True)
-    # Publish only after every AI batch has finished and the whole JSON is on disk.
-    with tempfile.NamedTemporaryFile(mode='w', encoding='utf-8', dir=OUT.parent, delete=False) as output:
-        temporary = Path(output.name)
-        try:
-            json.dump(payload, output, ensure_ascii=False, indent=2)
-            output.write('\n')
-            output.close()
-            temporary.replace(OUT)
-        finally:
-            temporary.unlink(missing_ok=True)
+    write_json(OUT, payload)
     print(f'Saved {len(signals)} signals and {len(prospects)} AI-screened prospects across {ai_batches} AI batches')
 
 

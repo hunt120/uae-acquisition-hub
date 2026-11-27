@@ -61,6 +61,24 @@ class GeminiTests(unittest.TestCase):
         self.assertEqual(request.call_count, 3)
         self.assertEqual(client.model, 'models/gemini-8-flash')
 
+    def test_research_can_retry_another_model_on_quota_error(self):
+        limited = HTTPError('https://example.invalid', 429, 'quota', {}, None)
+        for allow_fallback in (False, True):
+            with self.subTest(allow_fallback=allow_fallback), \
+                    patch('discover.time.sleep'), \
+                    patch('discover.urllib.request.urlopen', side_effect=[
+                        response({'models': [model('gemini-9-flash'), model('gemini-8-flash')]}),
+                        limited, limited, limited, response(generation([])),
+                    ]) as request:
+                client = discover.Gemini()
+                if allow_fallback:
+                    client.generate({}, try_other_on_rate_limit=True)
+                    self.assertEqual(client.model, 'models/gemini-8-flash')
+                else:
+                    with self.assertRaisesRegex(RuntimeError, 'HTTP 429'):
+                        client.generate({})
+                    self.assertEqual(request.call_count, 4)
+
     def test_all_models_missing_is_fatal(self):
         missing = HTTPError('https://example.invalid', 404, 'test-key', {}, None)
         with patch('discover.urllib.request.urlopen', side_effect=[
