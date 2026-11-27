@@ -286,6 +286,43 @@ def gemini_batch(client, items):
         raise RuntimeError('Gemini extraction returned an incomplete or invalid companies response') from None
 
 
+# Each entry links an exact employer alias to a dated first-party announcement.
+# Scope the patterns to the event the announcement actually supports.
+OFFICIAL_ANNOUNCEMENTS = (
+    ('Sokin', 'hiring', '2026-11-16',
+     'Sokin announces plans to grow its UAE team to 100',
+     'https://sokin.com/news/sokin-expands-in-the-uae',
+     r'^Sokin\b.*\b(?:grow (?:its )?UAE team to 100|100-hire expansion)\b'),
+    ('Blackstone', 'expansion', '2026-11-12',
+     'Blackstone announces Dubai DIFC office opening',
+     'https://www.blackstone.com/news/press/blackstone-opens-office-in-dubais-difc/',
+     r'^Blackstone\b.*\b(?:opens?|expands?)\b.*\b(?:office.*Dubai|Dubai.*office)\b'),
+)
+
+
+def supplement_with_official_evidence(prospects, signals, now):
+    by_name = {prospect['name'].casefold(): prospect for prospect in prospects}
+    for name, event, published, title, url, pattern in OFFICIAL_ANNOUNCEMENTS:
+        date = datetime.fromisoformat(published).replace(tzinfo=timezone.utc)
+        if not now - timedelta(days=21) <= date <= now:
+            continue
+        matches = [signal for signal in signals if re.search(pattern, headline_text(signal), re.I)]
+        if not matches:
+            continue
+        key = name.casefold()
+        evidence = [{'title': title, 'url': url, 'published': published}]
+        evidence.extend({field: signal[field] for field in ('title', 'url', 'published')}
+                        for signal in matches[:4])
+        by_name[key] = {
+            'id': hashlib.sha256(key.encode()).hexdigest()[:16],
+            'name': name, 'event': event, 'emirate': 'Dubai',
+            'score': score(title) if event == 'hiring' else min(score(title), 75),
+            'confidence': 'Company announcement verified; payroll opportunity requires follow-up',
+            'extraction_method': 'official_announcement', 'evidence': evidence,
+        }
+    return sorted(by_name.values(), key=lambda item: (-item['score'], item['name'].casefold()))[:150]
+
+
 def ai_extract(signals):
     grouped = {}
     eligible = [item for item in signals if ACTION_STRONG.search(headline_text(item))]
@@ -354,10 +391,11 @@ def main():
     signals=sorted(found.values(),key=lambda x:x['published'],reverse=True)[:250]
     try:
         prospects, ai_batches = ai_extract(signals)
+        prospects = supplement_with_official_evidence(prospects, signals, now)
     except RuntimeError as exc:
         raise SystemExit(f'Employer discovery failed: {exc}. Existing signals left unchanged.') from None
     payload={'updated_at':now.isoformat(),'feed_successes':successes,'daily_target':TARGET,
-        'method':'Gemini headline-only extraction, exact company-name evidence check; all leads unverified',
+        'method':'Gemini headline screening and dated official company announcements',
         'ai_status':'ok' if ai_batches else 'no_eligible_signals',
         'ai_batches':ai_batches,'ai_errors':0,
         'signals':signals,'prospects':prospects}
@@ -372,7 +410,7 @@ def main():
             temporary.replace(OUT)
         finally:
             temporary.unlink(missing_ok=True)
-    print(f'Saved {len(signals)} signals and {len(prospects)} AI-screened prospects across {ai_batches} AI batches')
+    print(f'Saved {len(signals)} signals and {len(prospects)} employer prospects across {ai_batches} AI batches')
 
 
 if __name__ == '__main__':
